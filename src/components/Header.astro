@@ -1,0 +1,26 @@
+---
+const phone = '(417) 555-0123'; // Placeholder - update with real tracking number later
+---
+
+<header class="fixed top-0 left-0 right-0 bg-primary-dark z-50 border-b border-concrete/30">
+  <div class="max-w-7xl mx-auto px-6 py-5 flex items-center justify-between">
+    <div class="flex items-center gap-4">
+      <img src="/images/logo.png" alt="Springfield Lot Striping" class="h-10 w-auto">
+      <div>
+        <span class="text-white text-2xl font-semibold tracking-tight">Springfield Lot Striping</span>
+      </div>
+    </div>
+    
+    <div class="flex items-center gap-8">
+      <a href={`tel:${phone.replace(/[^0-9]/g, '')}`} 
+         class="text-white hover:text-brand-yellow text-xl font-medium transition-colors">
+        {phone}
+      </a>
+      
+      <a href="#quote" 
+         class="btn-primary text-sm px-8 py-3.5">
+        Get Free Quote →
+      </a>
+    </div>
+  </div>
+</header>

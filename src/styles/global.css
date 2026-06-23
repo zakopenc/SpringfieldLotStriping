@@ -1,0 +1,76 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary-dark: #1a1a1a;
+  --color-brand-yellow: #f5c400;
+  --color-concrete: #4a4a4a;
+  --color-surface: #f8f8f6;
+  --color-stripe-orange: #e86a2e;
+  
+  --font-sans: 'Inter', system-ui, sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, monospace;
+}
+
+body {
+  font-family: 'Inter', system-ui, sans-serif;
+}
+
+h1, h2, h3 {
+  font-weight: 700;
+  letter-spacing: -0.025em;
+}
+
+.stripe-divider {
+  position: relative;
+}
+
+.stripe-divider::after {
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  width: 60px;
+  height: 4px;
+  background: #f5c400;
+  border-radius: 2px;
+}
+
+/* Industrial CTA */
+.btn-primary {
+  background-color: #f5c400;
+  color: #1a1a1a;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  padding: 14px 32px;
+  border-radius: 4px;
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.btn-primary:hover {
+  background-color: #d4aa00;
+  transform: translateY(-1px);
+}
+
+.btn-secondary {
+  border: 2px solid #f5c400;
+  color: #f5c400;
+  font-weight: 600;
+  padding: 12px 28px;
+  border-radius: 4px;
+  transition: all 0.2s;
+}
+
+.btn-secondary:hover {
+  background-color: #f5c400;
+  color: #1a1a1a;
+}
+
+/* Dark asphalt hero gradient */
+.asphalt-hero {
+  background: radial-gradient(circle at 30% 20%, #2a2a2a 0%, #1a1a1a 70%);
+  box-shadow: inset 0 0 80px rgba(0, 0, 0, 0.6);
+}
