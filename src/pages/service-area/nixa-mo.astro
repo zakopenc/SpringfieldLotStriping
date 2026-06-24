@@ -1,0 +1,36 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Header from '../../components/Header.astro';
+
+const title = "Parking Lot Striping in Nixa MO | Commercial Line Striping & ADA";
+const description = "Professional parking lot striping serving Nixa, Missouri. ADA compliance, fire lanes, and warehouse markings for commercial properties in Christian County.";
+const h1 = "Parking Lot Striping in Nixa, Missouri";
+---
+
+<BaseLayout {title} {description}>
+  <Header />
+  <div class="pt-24 bg-white">
+    <div class="max-w-7xl mx-auto px-6 py-16">
+      <h1 class="text-5xl font-bold text-primary-dark">{h1}</h1>
+      <div class="text-brand-yellow text-xl mt-2">Serving Christian County Commercial Properties</div>
+      
+      <img src="/images/xai_grok-imagine-image_20260623_180927_63d294da.jpg" alt="Nixa parking lot striping" class="my-12 rounded-2xl shadow-xl w-full" />
+      
+      <div class="prose prose-lg max-w-none text-concrete">
+        <p>We provide expert commercial parking lot striping to businesses throughout Nixa, Missouri. From the busy retail areas along Highway 14 to the growing commercial developments near the Ozark Mountains, our team delivers crisp, compliant markings that meet ADA, fire safety, and industrial standards.</p>
+        
+        <p>Nixa property managers trust us for fast, professional service on strip malls, medical offices, churches, and distribution facilities. We understand the unique needs of a rapidly growing Christian County community — including high weekend traffic and strict local code enforcement.</p>
+        
+        <h2>Why Nixa Businesses Choose Us</h2>
+        <ul>
+          <li>No travel fees within Christian County</li>
+          <li>Same-week availability for most restriping jobs</li>
+          <li>Full ADA compliance documentation</li>
+          <li>Overnight and early morning scheduling available</li>
+        </ul>
+        
+        <p class="mt-10"><a href="/services/parking-lot-striping" class="text-brand-yellow hover:underline font-medium">View our full parking lot striping services →</a></p>
+      </div>
+    </div>
+  </div>
+</BaseLayout>

@@ -1,0 +1,28 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Header from '../../components/Header.astro';
+
+const title = "Parking Lot Striping in Rogersville MO | Greene County Services";
+const description = "Reliable commercial parking lot striping, ADA markings, and fire lane services for Rogersville, Missouri and eastern Greene County.";
+const h1 = "Parking Lot Striping in Rogersville, Missouri";
+---
+
+<BaseLayout {title} {description}>
+  <Header />
+  <div class="pt-24 bg-white">
+    <div class="max-w-7xl mx-auto px-6 py-16">
+      <h1 class="text-5xl font-bold text-primary-dark">{h1}</h1>
+      <div class="text-brand-yellow text-xl mt-2">Eastern Greene County Coverage</div>
+      
+      <img src="/images/xai_grok-imagine-image_20260623_180935_f27b6b2c.jpg" alt="Rogersville commercial striping" class="my-12 rounded-2xl shadow-xl w-full" />
+      
+      <div class="prose prose-lg max-w-none text-concrete">
+        <p>Our service area includes Rogersville, Missouri. We provide expert parking lot restriping, ADA compliance updates, fire lane painting, and warehouse floor markings for businesses in this rapidly developing part of eastern Greene County.</p>
+        
+        <p>Rogersville property managers appreciate our no-travel-fee policy within the greater Springfield metro area, professional workmanship, and ability to schedule work during off-peak hours to minimize business disruption.</p>
+        
+        <p><a href="/contact" class="text-brand-yellow hover:underline font-medium">Get a free quote for your Rogersville property →</a></p>
+      </div>
+    </div>
+  </div>
+</BaseLayout>

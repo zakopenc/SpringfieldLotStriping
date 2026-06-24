@@ -1,0 +1,26 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Header from '../../components/Header.astro';
+
+const title = "Parking Lot Striping in Battlefield MO | Local Commercial Services";
+const description = "Expert commercial parking lot striping and ADA compliance markings serving Battlefield, Missouri.";
+const h1 = "Parking Lot Striping in Battlefield, Missouri";
+---
+
+<BaseLayout {title} {description}>
+  <Header />
+  <div class="pt-24 bg-white">
+    <div class="max-w-7xl mx-auto px-6 py-16">
+      <h1 class="text-5xl font-bold text-primary-dark">{h1}</h1>
+      <div class="text-brand-yellow text-xl mt-2">South Springfield Metro Area</div>
+      
+      <img src="/images/xai_grok-imagine-image_20260623_174834_8c90e1f0.jpg" alt="Battlefield parking lot striping" class="my-12 rounded-2xl shadow-xl w-full" />
+      
+      <div class="prose prose-lg max-w-none text-concrete">
+        <p>We deliver professional striping services to commercial properties in Battlefield, Missouri. Our work includes full ADA compliance packages, fire lane markings, and warehouse safety lines for the growing business community in this southern Springfield suburb.</p>
+        
+        <p>Battlefield facility managers value our attention to detail, quick turnaround, and deep knowledge of local regulations. We help protect your property from liability while maintaining a clean, professional appearance.</p>
+      </div>
+    </div>
+  </div>
+</BaseLayout>
