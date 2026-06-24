@@ -1,0 +1,55 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/Header.astro';
+
+const title = "Contact Springfield Lot Striping | Get a Free Quote";
+const description = "Contact us for a free quote on commercial parking lot striping in Springfield, Nixa, Ozark, Republic, Battlefield, and Rogersville, Missouri. Fast response for ADA, fire lane, and warehouse projects.";
+---
+
+<BaseLayout {title} {description}>
+  <Header />
+  <div class="pt-28 pb-20 bg-white">
+    <div class="max-w-2xl mx-auto px-6">
+      <h1 class="text-5xl font-bold text-primary-dark text-center mb-4">Get Your Free Quote</h1>
+      <p class="text-center text-xl text-concrete mb-12">Professional commercial parking lot striping in Springfield and Greene County. Response within 1 business hour.</p>
+      
+      <div class="bg-surface p-10 rounded-3xl">
+        <form class="space-y-6">
+          <div>
+            <label class="block text-sm font-medium mb-2">Name</label>
+            <input type="text" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-brand-yellow" placeholder="Your full name" required>
+          </div>
+          <div>
+            <label class="block text-sm font-medium mb-2">Business Name</label>
+            <input type="text" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-brand-yellow" placeholder="Company or property name" required>
+          </div>
+          <div>
+            <label class="block text-sm font-medium mb-2">Phone Number</label>
+            <input type="tel" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-brand-yellow" placeholder="(417) 555-0123" required>
+          </div>
+          <div>
+            <label class="block text-sm font-medium mb-2">Service Needed</label>
+            <select class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-brand-yellow">
+              <option>Restriping</option>
+              <option>ADA Compliance</option>
+              <option>Fire Lane Marking</option>
+              <option>Warehouse Lines</option>
+              <option>New Layout Design</option>
+              <option>Not Sure</option>
+            </select>
+          </div>
+          <div>
+            <label class="block text-sm font-medium mb-2">Message (Optional)</label>
+            <textarea class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-brand-yellow h-32" placeholder="Lot size, number of spaces, or any special requirements..."></textarea>
+          </div>
+          <button type="submit" class="w-full btn-primary py-4 text-lg">Send My Free Quote Request →</button>
+        </form>
+      </div>
+      
+      <div class="text-center mt-10">
+        <p class="text-2xl font-medium text-primary-dark">Or call us directly:</p>
+        <a href="tel:4175550123" class="text-4xl font-bold text-brand-yellow hover:text-yellow-600 transition-colors">(417) 555-0123</a>
+      </div>
+    </div>
+  </div>
+</BaseLayout>

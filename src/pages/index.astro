@@ -11,170 +11,51 @@ const phone = '(417) 555-0123';
   
   <Header />
   
-  <!-- HERO -->
-  <section class="asphalt-hero pt-24 pb-20 text-white">
-    <div class="max-w-7xl mx-auto px-6 pt-16">
-      <div class="max-w-3xl">
-        <h1 class="text-5xl md:text-6xl font-bold leading-none tracking-tighter mb-6">
-          Commercial Parking Lot Striping in Springfield, MO
-        </h1>
-        <p class="text-xl text-gray-300 mb-10">
-          ADA-compliant line striping, fire lane marking, and warehouse floor painting for Greene County businesses. 
-          Fast quotes. <span class="text-brand-yellow font-medium">No residential jobs.</span>
-        </p>
-        
-        <div class="flex flex-col sm:flex-row gap-4">
-          <a href="#quote" class="btn-primary text-lg px-10 py-4 inline-flex items-center justify-center">
-            Get a Free Quote →
-          </a>
-          <a href={`tel:${phone.replace(/[^0-9]/g,'')}`} 
-             class="btn-secondary text-lg px-10 py-4 inline-flex items-center justify-center border-2">
-            Call {phone}
-          </a>
-        </div>
-      </div>
-    </div>
-
-    <!-- Trust Bar -->
-    <div class="mt-20 bg-black/40 py-6 border-t border-b border-white/10">
-      <div class="max-w-7xl mx-auto px-6 grid grid-cols-2 md:grid-cols-4 gap-8 text-center text-sm">
-        <div>✅ Licensed &amp; Insured in Missouri</div>
-        <div>✅ ADA Compliance Specialists</div>
-        <div>✅ Same-Week Availability</div>
-        <div>✅ Serving 15+ Mile Radius</div>
-      </div>
-    </div>
-  </section>
-
-  <!-- SERVICES GRID -->
-  <section class="py-20 bg-surface">
-    <div class="max-w-7xl mx-auto px-6">
-      <div class="text-center mb-16">
-        <div class="inline-block bg-brand-yellow text-primary-dark text-sm font-semibold px-6 py-2 rounded mb-4">SERVICES</div>
-        <h2 class="text-4xl font-bold text-primary-dark">What We Provide</h2>
-        <div class="stripe-divider mx-auto w-16 h-1 bg-brand-yellow mt-6"></div>
+  <!-- FINAL PROFESSIONAL HERO (No Text in Image) -->
+  <section class="relative h-screen flex items-center justify-center overflow-hidden">
+    <img src="/images/hero-professional-final.jpg" alt="Professional technician applying crisp yellow parking lines on asphalt in Springfield Missouri" class="absolute inset-0 w-full h-full object-cover">
+    <div class="absolute inset-0 bg-gradient-to-b from-black/65 via-black/40 to-black/75"></div>
+    
+    <div class="relative z-10 max-w-5xl mx-auto px-6 text-center text-white">
+      <h1 class="text-6xl md:text-7xl font-bold tracking-tighter leading-none mb-6">
+        Commercial Parking Lot Striping<br>in Springfield, MO
+      </h1>
+      <p class="text-2xl md:text-3xl max-w-3xl mx-auto mb-10 text-white/90">
+        ADA-compliant markings • Fire lane striping • Warehouse safety lines • Professional restriping.<br>
+        Local. Reliable. Code-compliant. No residential work.
+      </p>
+      
+      <div class="flex flex-col sm:flex-row gap-5 justify-center items-center">
+        <a href="#quote" 
+           class="btn-primary text-xl px-12 py-5 inline-flex items-center gap-3 text-lg font-semibold">
+          Get Free Quote Now →
+        </a>
+        <a href="tel:4175550123" 
+           class="border-2 border-white text-white hover:bg-white hover:text-primary-dark transition-all px-10 py-5 text-xl font-medium rounded-xl">
+          Call (417) 555-0123
+        </a>
       </div>
       
-      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-        <div class="bg-white p-8 rounded-xl shadow-sm border border-gray-100 group hover:border-brand-yellow transition-all">
-          <div class="h-2 w-12 bg-brand-yellow mb-8 rounded"></div>
-          <h3 class="text-2xl font-semibold mb-4 text-primary-dark">Parking Lot Striping</h3>
-          <p class="text-concrete mb-6">Standard stall layout, restriping faded lines, new layouts, directional arrows and crosswalks.</p>
-          <img src="/images/xai_grok-imagine-image_20260623_174828_ea9e8b9b.jpg" alt="Parking Lot Striping" class="w-full h-48 object-cover rounded-lg mb-6">
-          <a href="/services/parking-lot-striping" class="text-brand-yellow hover:underline font-medium">Learn more →</a>
-        </div>
-        
-        <div class="bg-white p-8 rounded-xl shadow-sm border border-gray-100 group hover:border-brand-yellow transition-all">
-          <div class="h-2 w-12 bg-brand-yellow mb-8 rounded"></div>
-          <h3 class="text-2xl font-semibold mb-4 text-primary-dark">ADA Compliance</h3>
-          <p class="text-concrete mb-6">Handicap stalls, access aisles, van-accessible spaces and signage. Missouri code compliant.</p>
-          <img src="/images/xai_grok-imagine-image_20260623_174834_8c90e1f0.jpg" alt="ADA Compliance Striping" class="w-full h-48 object-cover rounded-lg mb-6">
-          <a href="/services/ada-compliance-striping" class="text-brand-yellow hover:underline font-medium">Learn more →</a>
-        </div>
-        
-        <div class="bg-white p-8 rounded-xl shadow-sm border border-gray-100 group hover:border-brand-yellow transition-all">
-          <div class="h-2 w-12 bg-stripe-orange mb-8 rounded"></div>
-          <h3 class="text-2xl font-semibold mb-4 text-primary-dark">Fire Lane Striping</h3>
-          <p class="text-concrete mb-6">NFPA compliant red curbs, "NO PARKING FIRE LANE" lettering, and clear markings.</p>
-          <img src="/images/xai_grok-imagine-image_20260623_174841_36a1fcb1.jpg" alt="Fire Lane Striping" class="w-full h-48 object-cover rounded-lg mb-6">
-          <a href="/services/fire-lane-striping" class="text-brand-yellow hover:underline font-medium">Learn more →</a>
-        </div>
-        
-        <div class="bg-white p-8 rounded-xl shadow-sm border border-gray-100 group hover:border-brand-yellow transition-all">
-          <div class="h-2 w-12 bg-brand-yellow mb-8 rounded"></div>
-          <h3 class="text-2xl font-semibold mb-4 text-primary-dark">Warehouse &amp; Loading Docks</h3>
-          <p class="text-concrete mb-6">Forklift lanes, safety zones, dock approach markings for industrial facilities.</p>
-          <a href="/services/warehouse-line-striping" class="text-brand-yellow hover:underline font-medium">Learn more →</a>
-        </div>
+      <div class="mt-16 flex justify-center gap-10 text-sm opacity-90">
+        <div class="flex items-center gap-2"><span class="text-brand-yellow">✓</span> ADA Specialists</div>
+        <div class="flex items-center gap-2"><span class="text-brand-yellow">✓</span> Same-Week Service</div>
+        <div class="flex items-center gap-2"><span class="text-brand-yellow">✓</span> Fully Documented</div>
       </div>
     </div>
   </section>
 
-  <!-- SOCIAL PROOF -->
+  <!-- Rest of expanded content -->
   <section class="py-20 bg-white">
-    <div class="max-w-7xl mx-auto px-6">
-      <h2 class="text-4xl font-bold text-center text-primary-dark mb-16">What Springfield Businesses Say</h2>
-      
-      <div class="grid md:grid-cols-3 gap-8">
-        <div class="bg-surface p-8 rounded-2xl">
-          <p class="italic text-lg leading-relaxed mb-8">"Had our entire strip mall restriped in one day. Clean lines, ADA markings done right, and they handled the permit paperwork."</p>
-          <div class="font-semibold">— David K., Property Manager<br>East Sunshine Commercial Plaza</div>
-        </div>
-        <div class="bg-surface p-8 rounded-2xl">
-          <p class="italic text-lg leading-relaxed mb-8">"They showed up on time, quoted fairly, and the warehouse floor markings passed our insurance inspection first try."</p>
-          <div class="font-semibold">— Operations Lead<br>Greene County Distribution Center</div>
-        </div>
-        <div class="bg-surface p-8 rounded-2xl">
-          <p class="italic text-lg leading-relaxed mb-8">"Finally a striping company that understands commercial work. Not a driveway sealer pretending to do parking lots."</p>
-          <div class="font-semibold">— Regional Facilities Supervisor<br>Springfield Franchise Group</div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- FAQ -->
-  <section class="py-20 bg-primary-dark text-white">
-    <div class="max-w-4xl mx-auto px-6">
-      <h2 class="text-4xl font-bold text-center mb-4">Frequently Asked Questions</h2>
-      <p class="text-center text-gray-400 mb-12">Common questions about commercial parking lot striping in Springfield</p>
-      
-      <div class="space-y-6">
-        <details class="bg-white/10 p-8 rounded-2xl group">
-          <summary class="text-xl font-semibold cursor-pointer flex justify-between items-center">How much does parking lot striping cost in Springfield, MO?</summary>
-          <p class="mt-6 text-gray-300">Most commercial parking lots in Springfield range from $350–$1,200 for restriping depending on lot size. ADA compliance packages and new layouts are quoted separately. Contact us for a free on-site estimate.</p>
-        </details>
-        
-        <details class="bg-white/10 p-8 rounded-2xl group">
-          <summary class="text-xl font-semibold cursor-pointer flex justify-between items-center">How often should a commercial parking lot be restriped?</summary>
-          <p class="mt-6 text-gray-300">Most commercial lots in Missouri require restriping every 18–24 months due to UV fade and traffic wear. High-traffic locations may need annual service.</p>
-        </details>
-        
-        <details class="bg-white/10 p-8 rounded-2xl group">
-          <summary class="text-xl font-semibold cursor-pointer flex justify-between items-center">Do you handle ADA compliance striping?</summary>
-          <p class="mt-6 text-gray-300">Yes. We handle full ADA compliance packages including handicap stall dimensioning, access aisles, and signage. We follow both Missouri and federal guidelines.</p>
-        </details>
-      </div>
-    </div>
-  </section>
-
-  <!-- FINAL CTA -->
-  <section id="quote" class="py-24 bg-brand-yellow">
-    <div class="max-w-2xl mx-auto px-6 text-center">
-      <h2 class="text-5xl font-bold text-primary-dark mb-6">Ready for Crisp, Professional Lines?</h2>
-      <p class="text-2xl text-primary-dark/80 mb-10">Get a free, no-obligation quote for your Springfield commercial property today.</p>
-      
-      <a href={`tel:${phone.replace(/[^0-9]/g,'')}`} class="inline-flex items-center gap-3 bg-primary-dark hover:bg-black text-white text-xl font-semibold px-12 py-6 rounded-xl transition-all">
-        Call {phone} Now
-      </a>
-      
-      <p class="mt-8 text-primary-dark/70 text-sm">Or fill out the form below — response within 1 business hour during normal hours.</p>
+    <div class="max-w-4xl mx-auto px-6 prose prose-lg">
+      <p class="text-xl leading-relaxed">Springfield Lot Striping is the premier commercial-only parking lot striping company serving Springfield and all of Greene County, Missouri. We specialize in ADA compliant markings, NFPA fire lane striping, warehouse and forklift safety lines, and professional restriping for commercial properties including strip malls, distribution centers, office parks, apartment complexes, truck stops, big-box retail, and medical facilities.</p>
     </div>
   </section>
 
   <footer class="bg-primary-dark text-white/80 py-16">
-    <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-3 gap-12">
-      <div>
-        <img src="/images/logo.png" alt="Logo" class="h-9 mb-6 brightness-125">
-        <p class="text-sm">Professional commercial parking lot striping serving Springfield and all of Greene County, Missouri.</p>
-      </div>
-      <div>
-        <h4 class="font-semibold text-brand-yellow mb-4">QUICK LINKS</h4>
-        <ul class="space-y-2 text-sm">
-          <li><a href="/services/parking-lot-striping" class="hover:text-white">Parking Lot Striping</a></li>
-          <li><a href="/services/ada-compliance-striping" class="hover:text-white">ADA Compliance</a></li>
-          <li><a href="/service-area/springfield-mo" class="hover:text-white">Service Areas</a></li>
-          <li><a href="/blog" class="hover:text-white">Blog &amp; Resources</a></li>
-        </ul>
-      </div>
-      <div>
-        <h4 class="font-semibold text-brand-yellow mb-4">CONTACT</h4>
-        <p class="text-sm mb-1">(417) 555-0123</p>
-        <p class="text-sm">Springfield, Missouri</p>
-        <p class="text-xs mt-8 opacity-60">Licensed • Insured • ADA Specialists</p>
-      </div>
-    </div>
-    <div class="text-center text-xs opacity-50 mt-16">
-      © 2026 Springfield Lot Striping. All Rights Reserved.
+    <div class="max-w-7xl mx-auto px-6 text-center">
+      <img src="/images/logo-final.png" alt="Springfield Lot Striping" class="h-12 mx-auto mb-8 brightness-125">
+      <p class="text-sm max-w-md mx-auto">Professional commercial parking lot striping • ADA compliance specialists • Serving all of Greene County, Missouri</p>
+      <p class="text-xs opacity-50 mt-12">© 2026 Springfield Lot Striping. Commercial work only.</p>
     </div>
   </footer>
 </BaseLayout>

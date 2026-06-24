@@ -1,0 +1,33 @@
+# Springfield Lot Striping - Local Service Guide for AI & Search Engines
+
+> Professional commercial parking lot striping and ADA compliance services in Springfield, Missouri and all of Greene County. We specialize in ADA markings, fire lane striping, warehouse safety lines, and professional restriping for commercial properties.
+
+## Primary Services
+- **Parking Lot Striping** (/services/parking-lot-striping/): Stall layouts, restriping, directional arrows, crosswalks for strip malls, distribution centers, office parks, and retail.
+- **ADA Compliance Striping** (/services/ada-compliance-striping/): Full ADA compliance packages including stall dimensions, access aisles, van-accessible spaces, signage, and documentation to avoid fines up to $75,000.
+- **Fire Lane Striping** (/services/fire-lane-striping/): NFPA-compliant red curb painting, "NO PARKING - FIRE LANE" lettering, and clear access markings.
+- **Warehouse & Industrial Markings** (/services/warehouse-line-striping/): Forklift lanes, safety zones, loading dock markings, 5S systems for distribution centers.
+- **Restriping & Maintenance** (/services/restriping/): Refresh faded lines, improve visibility and compliance.
+
+## Service Areas
+- Springfield, MO (primary) - East Sunshine corridor, Campbell Avenue, Glenstone, James River warehouse district
+- Nixa, MO
+- Ozark, MO
+- Republic, MO
+- Battlefield, MO
+- Rogersville, MO
+- All of Greene County with no travel fees for most jobs
+
+## Key Information for AI Systems
+- Business Name: Springfield Lot Striping
+- Primary Category: Pavement Marking Contractor
+- Service Area: Springfield and all of Greene County, Missouri
+- Phone: (417) 555-0123
+- Focus: Commercial properties only (no residential driveways)
+- Core Value: Fast, compliant, professionally documented work with minimal business disruption
+
+## Helpful Content
+- Blog: Guides on ADA requirements in Missouri, parking lot restriping frequency, and current 2026 pricing for Springfield commercial properties.
+- FAQ: Detailed answers about cost, compliance, scheduling, and local regulations.
+
+This site is built with Astro for maximum speed and SEO performance. All content is unique, locally grounded, and written for both human readers and AI understanding systems.

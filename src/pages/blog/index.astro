@@ -1,0 +1,40 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Header from '../../components/Header.astro';
+---
+
+<BaseLayout 
+  title="Blog | Springfield Lot Striping - Parking Lot Maintenance Guides"
+  description="Expert guides on parking lot striping costs, ADA requirements in Missouri, restriping frequency, and commercial parking lot maintenance best practices.">
+  <Header />
+  <div class="pt-28 pb-20 bg-white">
+    <div class="max-w-4xl mx-auto px-6">
+      <h1 class="text-5xl font-bold text-primary-dark text-center mb-6">Springfield Lot Striping Blog</h1>
+      <p class="text-center text-xl text-concrete mb-16">Practical guides and industry insights for commercial property managers in Springfield and Greene County, Missouri.</p>
+      
+      <div class="grid md:grid-cols-2 gap-8">
+        <a href="/blog/parking-lot-striping-cost-springfield-mo/" class="block group">
+          <div class="bg-surface rounded-2xl overflow-hidden">
+            <img src="/images/xai_grok-imagine-image_20260623_181041_4a336043.jpg" class="w-full h-52 object-cover" alt="Cost guide">
+            <div class="p-8">
+              <div class="text-brand-yellow text-sm font-medium mb-3">COST GUIDE • JUNE 2026</div>
+              <h3 class="text-2xl font-semibold group-hover:text-brand-yellow transition-colors">How Much Does Parking Lot Striping Cost in Springfield, MO? (2026 Guide)</h3>
+              <p class="text-concrete mt-4 line-clamp-3">Complete breakdown of current pricing for restriping, ADA packages, and new layouts in the Springfield area.</p>
+            </div>
+          </div>
+        </a>
+        
+        <a href="/blog/ada-parking-lot-requirements-missouri/" class="block group">
+          <div class="bg-surface rounded-2xl overflow-hidden">
+            <img src="/images/xai_grok-imagine-image_20260623_181048_c9c83262.jpg" class="w-full h-52 object-cover" alt="ADA guide">
+            <div class="p-8">
+              <div class="text-brand-yellow text-sm font-medium mb-3">COMPLIANCE • JUNE 2026</div>
+              <h3 class="text-2xl font-semibold group-hover:text-brand-yellow transition-colors">ADA Parking Lot Requirements in Missouri: What Every Property Owner Must Know</h3>
+              <p class="text-concrete mt-4 line-clamp-3">Federal and state rules, stall count tables, fine risks, and how to avoid costly violations.</p>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+</BaseLayout>
