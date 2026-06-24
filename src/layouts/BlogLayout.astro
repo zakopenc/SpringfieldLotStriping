@@ -1,0 +1,14 @@
+---
+import BaseLayout from './BaseLayout.astro';
+import Header from '../components/Header.astro';
+
+const { title, description, publishDate } = Astro.props;
+---
+
+<BaseLayout {title} {description}>
+  <Header />
+  <article class="max-w-3xl mx-auto px-6 pt-28 pb-20 prose prose-lg">
+    <time class="text-sm text-brand-yellow font-medium">{publishDate}</time>
+    <slot />
+  </article>
+</BaseLayout>
