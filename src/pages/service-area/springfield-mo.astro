@@ -1,0 +1,34 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Header from '../../components/Header.astro';
+
+const title = "Parking Lot Striping in Springfield MO | Local Commercial Line Striping";
+const description = "Professional parking lot striping serving Springfield, Missouri. We know the East Sunshine corridor, Campbell Avenue, Glenstone, and James River warehouse district.";
+---
+
+<BaseLayout {title} {description}>
+  <Header />
+  
+  <div class="pt-24 bg-white">
+    <div class="max-w-7xl mx-auto px-6 py-16">
+      <h1 class="text-5xl font-bold text-primary-dark">Parking Lot Striping in Springfield, Missouri</h1>
+      <div class="text-brand-yellow text-xl mt-2">Local • Reliable • ADA Compliant</div>
+      
+      <img src="/images/xai_grok-imagine-image_20260623_180927_63d294da.jpg" alt="Springfield parking lot striping" class="my-12 rounded-2xl shadow-xl" />
+      
+      <div class="prose prose-lg">
+        <p>We proudly serve all major commercial corridors in Springfield including the East Sunshine retail strip, Campbell Avenue business district, Glenstone commercial corridor, and the James River Freeway warehouse and distribution centers.</p>
+        
+        <p>Whether you manage a strip mall, office park, distribution center, or medical facility, our team understands the unique needs of Springfield properties — from heavy truck traffic on the James River corridor to high-visibility retail parking on Sunshine.</p>
+        
+        <h2>Why Local Businesses Choose Us</h2>
+        <ul>
+          <li>Same-week availability for most jobs</li>
+          <li>Full ADA compliance expertise</li>
+          <li>Early morning and overnight scheduling to minimize disruption</li>
+          <li>Professional documentation for property management and insurance</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</BaseLayout>
