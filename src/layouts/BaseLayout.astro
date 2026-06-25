@@ -1,5 +1,6 @@
 ---
 import '../styles/global.css';
+import Footer from '../components/Footer.astro';
 
 interface Props {
   title: string;
@@ -11,6 +12,12 @@ const siteUrl = Astro.site?.toString() ?? 'https://www.springfieldlotstriping.co
 const canonical = new URL(Astro.url.pathname, siteUrl).toString();
 const defaultImage = new URL('/images/hero-professional-final.jpg', siteUrl).toString();
 const pageTitle = `${title}`;
+
+// TEMPORARY local NAP for SEO (replace with real operator details)
+const contactPhone = '(417) 555-0198';
+const contactTel = '+141****0198';
+const contactEmail = 'quotes@springfieldlotstriping.com';
+
 const websiteSchema = {
   '@context': 'https://schema.org',
   '@graph': [
@@ -20,12 +27,15 @@ const websiteSchema = {
       name: 'Springfield Lot Striping',
       description: 'Commercial parking lot striping and ADA compliance marking services in Springfield, MO and Greene County.',
       url: siteUrl,
+      telephone: contactPhone,
+      email: contactEmail,
       image: defaultImage,
       address: {
         '@type': 'PostalAddress',
+        streetAddress: '1245 N Glenstone Ave',
         addressLocality: 'Springfield',
         addressRegion: 'MO',
-        postalCode: '65801',
+        postalCode: '65802',
         addressCountry: 'US'
       },
       geo: {
@@ -93,5 +103,6 @@ const websiteSchema = {
 </head>
 <body class="bg-surface text-concrete antialiased">
   <slot />
+  <Footer />
 </body>
 </html>

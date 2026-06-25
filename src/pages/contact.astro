@@ -3,7 +3,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import Header from '../components/Header.astro';
 
 const title = "Contact Springfield Lot Striping | Get a Free Quote";
-const description = "Contact us for a free quote on commercial parking lot striping in Springfield, Nixa, Ozark, Republic, Battlefield, and Rogersville, Missouri. Fast response for ADA, fire lane, and warehouse projects.";
+const description = "Contact us for a free quote on commercial parking lot striping in Springfield, Nixa, Ozark, Republic, Battlefield, and Rogersville, Missouri. Fast response for ADA, fire lane, and warehouse projects. Call (417) 555-0198.";
 ---
 
 <BaseLayout {title} {description}>
@@ -11,44 +11,88 @@ const description = "Contact us for a free quote on commercial parking lot strip
   <div class="pt-28 pb-20 bg-white">
     <div class="max-w-2xl mx-auto px-6">
       <h1 class="text-5xl font-bold text-primary-dark text-center mb-4">Get Your Free Quote</h1>
-      <p class="text-center text-xl text-concrete mb-12">Professional commercial parking lot striping in Springfield and Greene County. Tell us about your lot and we’ll get back to you quickly.</p>
+      <p class="text-center text-xl text-concrete mb-4">Professional commercial parking lot striping in Springfield and Greene County. Fast response for ADA compliance, fire lanes, warehouse lines, and restriping.</p>
+      
+      <div class="text-center mb-12">
+        <p class="text-2xl font-semibold text-primary-dark">Call or Text: <a href="tel:+141****0198" class="text-brand-yellow hover:underline">(417) 555-0198</a></p>
+        <p class="text-concrete mt-1">Email: <a href="mailto:quotes@springfieldlotstriping.com" class="text-brand-yellow hover:underline">quotes@springfieldlotstriping.com</a></p>
+        <p class="text-sm text-concrete mt-2">Same-week availability for most commercial projects • Greene County focused</p>
+      </div>
 
-      <div class="bg-surface p-10 rounded-3xl">
-        <form class="space-y-6">
-          <div>
-            <label class="block text-sm font-medium mb-2">Name</label>
-            <input type="text" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-brand-yellow" placeholder="Your full name" required>
+      <div class="bg-surface p-10 rounded-3xl mb-12">
+        <form action="https://formspree.io/f/mvzjkvpr" method="POST" class="space-y-6">
+          <!-- Formspree configuration -->
+          <input type="hidden" name="_subject" value="New Quote Request - Springfield Lot Striping">
+          <input type="text" name="_gotcha" style="display:none">
+
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div>
+              <label class="block text-sm font-medium mb-2">Name</label>
+              <input type="text" name="name" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-brand-yellow" placeholder="Your full name" required>
+            </div>
+            <div>
+              <label class="block text-sm font-medium mb-2">Business / Property Name</label>
+              <input type="text" name="business" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-brand-yellow" placeholder="Company or property name" required>
+            </div>
           </div>
-          <div>
-            <label class="block text-sm font-medium mb-2">Business Name</label>
-            <input type="text" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-brand-yellow" placeholder="Company or property name" required>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div>
+              <label class="block text-sm font-medium mb-2">Phone Number</label>
+              <input type="tel" name="phone" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-brand-yellow" placeholder="Best callback number" required>
+            </div>
+            <div>
+              <label class="block text-sm font-medium mb-2">Service Needed</label>
+              <select name="service" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-brand-yellow">
+                <option>Restriping</option>
+                <option>ADA Compliance Striping</option>
+                <option>Fire Lane Marking</option>
+                <option>Warehouse / Industrial Lines</option>
+                <option>New Layout or Full Design</option>
+                <option>Not Sure / Assessment Needed</option>
+              </select>
+            </div>
           </div>
+
           <div>
-            <label class="block text-sm font-medium mb-2">Phone Number</label>
-            <input type="tel" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-brand-yellow" placeholder="Best callback number" required>
+            <label class="block text-sm font-medium mb-2">Lot Details &amp; Timeline</label>
+            <textarea name="message" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-brand-yellow h-32" placeholder="Approximate number of spaces, lot location (e.g. East Sunshine, James River corridor), deadline, or special requirements (ADA, overnight work, etc.)..." required></textarea>
           </div>
-          <div>
-            <label class="block text-sm font-medium mb-2">Service Needed</label>
-            <select class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-brand-yellow">
-              <option>Restriping</option>
-              <option>ADA Compliance</option>
-              <option>Fire Lane Marking</option>
-              <option>Warehouse Lines</option>
-              <option>New Layout Design</option>
-              <option>Not Sure</option>
-            </select>
-          </div>
-          <div>
-            <label class="block text-sm font-medium mb-2">Message (Optional)</label>
-            <textarea class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-brand-yellow h-32" placeholder="Lot size, number of spaces, deadline, or special requirements..."></textarea>
-          </div>
+
           <button type="submit" class="w-full btn-primary py-4 text-lg">Send My Free Quote Request →</button>
+          <p class="text-xs text-center text-concrete">We typically respond within 2 business hours during the week.</p>
         </form>
       </div>
 
-      <div class="text-center mt-10">
-        <p class="text-2xl font-medium text-primary-dark">Prefer email? Use the form and we’ll follow up promptly.</p>
-        <p class="text-sm text-concrete mt-4">Commercial projects only. Springfield, Missouri and surrounding Greene County service area.</p>
+      <div class="prose prose-lg max-w-none text-concrete">
+        <h2 class="text-3xl font-bold text-primary-dark">Why Springfield Businesses Call Us First</h2>
+        <p>We specialize exclusively in commercial parking lot striping and compliance work across Springfield and Greene County. No residential driveways. We understand the pressures facility managers and property owners face: tenant turnover, code inspections, delivery traffic, and the need for documentation that stands up to insurance and city reviews.</p>
+
+        <h3>Fast, Documented, Commercial-Only</h3>
+        <ul>
+          <li>Same-week or next-day scheduling for most jobs</li>
+          <li>Early morning, overnight, or weekend work to minimize disruption</li>
+          <li>Full photo and measurement documentation delivered after every project</li>
+          <li>Experience with strip malls, warehouses, medical offices, apartments, retail, and industrial sites on East Sunshine, Glenstone, Campbell, and the James River corridor</li>
+        </ul>
+
+        <h3>What to Expect</h3>
+        <p>When you contact us, we ask the right questions up front: stall count, current condition, any upcoming paving or sealcoating, ADA requirements, fire lane compliance needs, and tenant schedules. This lets us provide an accurate quote quickly and arrive prepared.</p>
+
+        <p>Most standard restriping jobs on lots with 50–150 spaces are completed in a few hours. Larger or more complex projects (full ADA resets, warehouse 5S layouts, or new construction layouts) are quoted after a quick site review.</p>
+
+        <h2>Frequently Asked Questions</h2>
+        <h3>How much does parking lot striping cost in Springfield?</h3>
+        <p>Typical commercial restriping falls in the $850–$2,800 range depending on the number of stalls, condition of the asphalt, and whether any layout changes or ADA updates are required. We provide detailed quotes after reviewing your specific lot.</p>
+
+        <h3>Do you handle ADA compliance work?</h3>
+        <p>Yes. We regularly update accessible stalls, access aisles, van spaces, and signage to meet current Missouri and federal requirements. We can provide documentation suitable for inspections or property management records.</p>
+
+        <h3>Can you work around my tenants and operating hours?</h3>
+        <p>Absolutely. We specialize in low-disruption scheduling including overnight and early morning work for retail, medical, and warehouse properties.</p>
+
+        <h3>Do you serve areas outside Springfield?</h3>
+        <p>Yes — Nixa, Ozark, Republic, Battlefield, Rogersville, and the rest of Greene County. No travel fees for most jobs in our primary service area.</p>
       </div>
     </div>
   </div>
