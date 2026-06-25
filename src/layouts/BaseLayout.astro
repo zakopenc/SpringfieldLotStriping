@@ -7,7 +7,46 @@ interface Props {
 }
 
 const { title, description } = Astro.props;
-const canonical = `https://www.springfieldlotstriping.com${Astro.url.pathname}`;
+const siteUrl = Astro.site?.toString() ?? 'https://www.springfieldlotstriping.com';
+const canonical = new URL(Astro.url.pathname, siteUrl).toString();
+const defaultImage = new URL('/images/hero-professional-final.jpg', siteUrl).toString();
+const pageTitle = `${title}`;
+const websiteSchema = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'LocalBusiness',
+      '@id': `${siteUrl}#business`,
+      name: 'Springfield Lot Striping',
+      description: 'Commercial parking lot striping and ADA compliance marking services in Springfield, MO and Greene County.',
+      url: siteUrl,
+      image: defaultImage,
+      address: {
+        '@type': 'PostalAddress',
+        addressLocality: 'Springfield',
+        addressRegion: 'MO',
+        postalCode: '65801',
+        addressCountry: 'US'
+      },
+      geo: {
+        '@type': 'GeoCoordinates',
+        latitude: 37.2090,
+        longitude: -93.2923
+      },
+      areaServed: ['Springfield', 'Nixa', 'Ozark', 'Republic', 'Battlefield', 'Rogersville', 'Greene County'],
+      serviceType: ['Parking Lot Striping', 'ADA Compliance Striping', 'Fire Lane Striping', 'Warehouse Line Striping'],
+      priceRange: '$$'
+    },
+    {
+      '@type': 'WebSite',
+      '@id': `${siteUrl}#website`,
+      url: siteUrl,
+      name: 'Springfield Lot Striping',
+      description: description,
+      inLanguage: 'en-US'
+    }
+  ]
+};
 ---
 
 <!doctype html>
@@ -16,47 +55,32 @@ const canonical = `https://www.springfieldlotstriping.com${Astro.url.pathname}`;
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content={description} />
+  <meta name="robots" content="index,follow,max-image-preview:large" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Springfield Lot Striping" />
+  <meta property="og:title" content={pageTitle} />
+  <meta property="og:description" content={description} />
+  <meta property="og:url" content={canonical} />
+  <meta property="og:image" content={defaultImage} />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content={pageTitle} />
+  <meta name="twitter:description" content={description} />
+  <meta name="twitter:image" content={defaultImage} />
   <title>{title}</title>
   <link rel="canonical" href={canonical} />
-  
+  <link rel="alternate" href={canonical} hreflang="en-us" />
+
   <!-- Favicon -->
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
   <link rel="icon" type="image/png" sizes="180x180" href="/favicon-180.png">
   <link rel="apple-touch-icon" sizes="180x180" href="/favicon-180.png">
-  
-  <!-- Preload Inter font -->
+
+  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@500&amp;display=swap" rel="stylesheet">
-  
-  <!-- Schema.org JSON-LD -->
-  <script type="application/ld+json" set:html={JSON.stringify({
-    "@context": "https://schema.org",
-    "@type": "LocalBusiness",
-    "name": "Springfield Lot Striping",
-    "description": "Commercial parking lot striping and ADA compliance marking services in Springfield, MO and Greene County.",
-    "url": "https://www.springfieldlotstriping.com",
-    "telephone": "(417) 555-0123",
-    "address": {
-      "@type": "PostalAddress",
-      "addressLocality": "Springfield",
-      "addressRegion": "MO",
-      "postalCode": "65801",
-      "addressCountry": "US"
-    },
-    "geo": {
-      "@type": "GeoCoordinates",
-      "latitude": 37.2090,
-      "longitude": -93.2923
-    },
-    "areaServed": ["Springfield", "Nixa", "Ozark", "Republic", "Battlefield", "Rogersville", "Greene County"],
-    "serviceType": "Parking Lot Striping",
-    "priceRange": "$$"
-  })}>
-  </script>
-  
-  <style>
-    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500&display=swap');
-  </style>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+
+  <script type="application/ld+json" set:html={JSON.stringify(websiteSchema)}></script>
 </head>
 <body class="bg-surface text-concrete antialiased">
   <slot />

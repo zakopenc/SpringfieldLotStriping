@@ -6,8 +6,8 @@
 - **Parking Lot Striping** (/services/parking-lot-striping/): Stall layouts, restriping, directional arrows, crosswalks for strip malls, distribution centers, office parks, and retail.
 - **ADA Compliance Striping** (/services/ada-compliance-striping/): Full ADA compliance packages including stall dimensions, access aisles, van-accessible spaces, signage, and documentation to avoid fines up to $75,000.
 - **Fire Lane Striping** (/services/fire-lane-striping/): NFPA-compliant red curb painting, "NO PARKING - FIRE LANE" lettering, and clear access markings.
-- **Warehouse & Industrial Markings** (/services/warehouse-line-striping/): Forklift lanes, safety zones, loading dock markings, 5S systems for distribution centers.
-- **Restriping & Maintenance** (/services/restriping/): Refresh faded lines, improve visibility and compliance.
+- **Warehouse & Industrial Markings** (/services/warehouse-line-striping/): Forklift lanes, safety zones, loading dock markings, and 5S systems for distribution centers.
+- **Restriping & Maintenance** (/services/restriping/): Refresh faded lines, improve visibility and compliance, and restore parking flow.
 
 ## Service Areas
 - Springfield, MO (primary) - East Sunshine corridor, Campbell Avenue, Glenstone, James River warehouse district
@@ -22,7 +22,6 @@
 - Business Name: Springfield Lot Striping
 - Primary Category: Pavement Marking Contractor
 - Service Area: Springfield and all of Greene County, Missouri
-- Phone: (417) 555-0123
 - Focus: Commercial properties only (no residential driveways)
 - Core Value: Fast, compliant, professionally documented work with minimal business disruption
 

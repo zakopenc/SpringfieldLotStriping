@@ -9,30 +9,59 @@ interface Props {
 }
 
 const { title, description, h1 } = Astro.props;
+const siteUrl = Astro.site?.toString() ?? 'https://www.springfieldlotstriping.com';
+const path = Astro.url.pathname.replace(/\/$/, '') || '/';
+const serviceSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Service',
+  name: h1,
+  description,
+  provider: {
+    '@type': 'LocalBusiness',
+    '@id': `${siteUrl}#business`,
+    name: 'Springfield Lot Striping',
+    url: siteUrl
+  },
+  areaServed: [
+    'Springfield, MO',
+    'Nixa, MO',
+    'Ozark, MO',
+    'Republic, MO',
+    'Battlefield, MO',
+    'Rogersville, MO',
+    'Greene County, MO'
+  ],
+  url: new URL(path, siteUrl).toString()
+};
+const breadcrumbSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: siteUrl },
+    { '@type': 'ListItem', position: 2, name: h1, item: new URL(path, siteUrl).toString() }
+  ]
+};
 ---
 
 <BaseLayout {title} {description}>
   <Header />
-  
+  <script type="application/ld+json" set:html={JSON.stringify(serviceSchema)}></script>
+  <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)}></script>
+
   <div class="pt-24 bg-white">
     <div class="max-w-7xl mx-auto px-6 py-16">
       <h1 class="text-5xl font-bold text-primary-dark mb-8">{h1}</h1>
       <div class="stripe-divider w-20 h-1 bg-brand-yellow mb-12"></div>
-      
+
       <slot />
     </div>
   </div>
 
-  <!-- CTA Banner -->
   <div class="bg-primary-dark py-16 text-white text-center">
     <div class="max-w-2xl mx-auto px-6">
       <h2 class="text-4xl font-semibold mb-4">Ready for Professional Striping?</h2>
       <p class="text-xl mb-8 text-white/80">Get a free quote for your Springfield or Greene County property today.</p>
-      <a href="/#quote" class="btn-primary text-lg px-12 py-4 inline-block">Request Free Quote →</a>
+      <a href="/contact" class="btn-primary text-lg px-12 py-4 inline-block">Request Free Quote →</a>
     </div>
   </div>
-  
-  <script>
-    // Simple accordion enhancement if needed
-  </script>
 </BaseLayout>

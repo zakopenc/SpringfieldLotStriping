@@ -1,8 +1,6 @@
 ---
 import Header from '../components/Header.astro';
 import BaseLayout from '../layouts/BaseLayout.astro';
-
-const phone = '(417) 555-0123';
 ---
 
 <BaseLayout
@@ -39,8 +37,8 @@ const phone = '(417) 555-0123';
           <a href="/contact" class="btn-primary text-lg px-10 py-5 justify-center">
             Request Free Quote →
           </a>
-          <a href={`tel:${phone.replace(/[^0-9]/g, '')}`} class="btn-secondary text-lg px-10 py-5 text-center">
-            Call {phone}
+          <a href="/contact" class="btn-secondary text-lg px-10 py-5 text-center">
+            Send Details Instead
           </a>
         </div>
 
@@ -74,7 +72,7 @@ const phone = '(417) 555-0123';
 
       <div class="lg:col-span-5 grid gap-5">
         <div class="bg-surface rounded-3xl p-8 border border-black/5">
-          <div class="text-brand-yellow text-sm uppercase tracking-[0.18em] font-semibold mb-3">Primary Buyers</div>
+        <div class="text-primary-dark text-sm uppercase tracking-[0.18em] font-semibold mb-3">Primary Buyers</div>
           <h3 class="text-2xl font-semibold text-primary-dark mb-4">Who this site is built for</h3>
           <ul class="space-y-3 text-concrete">
             <li>• Facility managers under ADA deadlines</li>
@@ -209,22 +207,22 @@ const phone = '(417) 555-0123';
 
       <div class="grid md:grid-cols-2 xl:grid-cols-4 gap-8">
         <div class="bg-white rounded-3xl p-8">
-          <div class="text-brand-yellow text-6xl font-light mb-5">01</div>
+          <div class="text-primary-dark text-6xl font-light mb-5">01</div>
           <h3 class="text-2xl font-semibold text-primary-dark mb-4">Assess</h3>
           <p class="text-concrete">We review lot size, current striping condition, traffic flow, ADA requirements, fire access areas, and work timing constraints.</p>
         </div>
         <div class="bg-white rounded-3xl p-8">
-          <div class="text-brand-yellow text-6xl font-light mb-5">02</div>
+          <div class="text-primary-dark text-6xl font-light mb-5">02</div>
           <h3 class="text-2xl font-semibold text-primary-dark mb-4">Layout</h3>
           <p class="text-concrete">We map the layout, verify stall counts, identify accessible space requirements, and plan clean execution with minimal disruption.</p>
         </div>
         <div class="bg-white rounded-3xl p-8">
-          <div class="text-brand-yellow text-6xl font-light mb-5">03</div>
+          <div class="text-primary-dark text-6xl font-light mb-5">03</div>
           <h3 class="text-2xl font-semibold text-primary-dark mb-4">Stripe</h3>
           <p class="text-concrete">Professional equipment, crisp lines, high-visibility paint, and clear markings for parking, ADA, fire lanes, and internal traffic zones.</p>
         </div>
         <div class="bg-white rounded-3xl p-8">
-          <div class="text-brand-yellow text-6xl font-light mb-5">04</div>
+          <div class="text-primary-dark text-6xl font-light mb-5">04</div>
           <h3 class="text-2xl font-semibold text-primary-dark mb-4">Document</h3>
           <p class="text-concrete">Before/after photos, measurement notes, and a clear handoff so the property manager has clean records for operations and compliance.</p>
         </div>
@@ -320,8 +318,8 @@ const phone = '(417) 555-0123';
             <a href="/contact" class="bg-primary-dark hover:bg-black text-white text-lg font-semibold px-10 py-5 rounded-2xl transition-colors text-center">
               Open Quote Form
             </a>
-            <a href={`tel:${phone.replace(/[^0-9]/g, '')}`} class="border-2 border-primary-dark text-primary-dark hover:bg-primary-dark hover:text-white text-lg font-semibold px-10 py-5 rounded-2xl transition-colors text-center">
-              Call {phone}
+            <a href="/contact" class="border-2 border-primary-dark text-primary-dark hover:bg-primary-dark hover:text-white text-lg font-semibold px-10 py-5 rounded-2xl transition-colors text-center">
+              Open Contact Form
             </a>
           </div>
         </div>
@@ -347,7 +345,7 @@ const phone = '(417) 555-0123';
         <p class="text-sm leading-relaxed">Commercial parking lot striping, ADA compliance markings, fire lane striping, warehouse safety lines, and restriping for Springfield and surrounding service areas.</p>
       </div>
       <div>
-        <h4 class="font-semibold text-brand-yellow mb-5 uppercase tracking-[0.14em] text-sm">Top Pages</h4>
+        <p class="font-semibold text-brand-yellow mb-5 uppercase tracking-[0.14em] text-sm">Top Pages</p>
         <ul class="space-y-3 text-sm">
           <li><a href="/services/parking-lot-striping" class="hover:text-white">Parking Lot Striping</a></li>
           <li><a href="/services/ada-compliance-striping" class="hover:text-white">ADA Compliance</a></li>
@@ -357,8 +355,8 @@ const phone = '(417) 555-0123';
         </ul>
       </div>
       <div>
-        <h4 class="font-semibold text-brand-yellow mb-5 uppercase tracking-[0.14em] text-sm">Contact</h4>
-        <p class="text-lg font-medium text-white">{phone}</p>
+        <p class="font-semibold text-brand-yellow mb-5 uppercase tracking-[0.14em] text-sm">Contact</p>
+        <p class="text-lg font-medium text-white">Use the quote form for fast callback scheduling.</p>
         <p class="text-sm mt-2">Springfield, Missouri</p>
         <p class="text-sm mt-4">Commercial-focused lead generation site for parking lot striping and compliance services.</p>
       </div>

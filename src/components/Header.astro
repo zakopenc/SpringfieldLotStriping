@@ -1,5 +1,4 @@
 ---
-const phone = '(417) 555-0123';
 ---
 
 <header class="fixed top-0 left-0 right-0 z-50 border-b border-white/10 bg-primary-dark/95 backdrop-blur-sm">
@@ -13,11 +12,8 @@ const phone = '(417) 555-0123';
     </a>
 
     <div class="flex items-center gap-3 sm:gap-6 shrink-0">
-      <a
-        href={`tel:${phone.replace(/[^0-9]/g, '')}`}
-        class="hidden md:inline text-white hover:text-brand-yellow text-lg font-medium transition-colors"
-      >
-        {phone}
+      <a href="/contact" class="hidden md:inline text-white hover:text-brand-yellow text-lg font-medium transition-colors">
+        Request Quote
       </a>
 
       <a href="/contact" class="btn-primary text-xs sm:text-sm px-4 sm:px-8 py-3 sm:py-3.5 whitespace-nowrap">

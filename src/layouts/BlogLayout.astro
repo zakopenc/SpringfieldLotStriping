@@ -3,10 +3,29 @@ import BaseLayout from './BaseLayout.astro';
 import Header from '../components/Header.astro';
 
 const { title, description, publishDate } = Astro.props;
+const siteUrl = Astro.site?.toString() ?? 'https://www.springfieldlotstriping.com';
+const articleSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BlogPosting',
+  headline: title,
+  description,
+  datePublished: publishDate,
+  author: {
+    '@type': 'Organization',
+    name: 'Springfield Lot Striping'
+  },
+  publisher: {
+    '@type': 'Organization',
+    name: 'Springfield Lot Striping',
+    url: siteUrl
+  },
+  mainEntityOfPage: new URL(Astro.url.pathname, siteUrl).toString()
+};
 ---
 
 <BaseLayout {title} {description}>
   <Header />
+  <script type="application/ld+json" set:html={JSON.stringify(articleSchema)}></script>
   <article class="max-w-3xl mx-auto px-6 pt-28 pb-20 prose prose-lg">
     <time class="text-sm text-brand-yellow font-medium">{publishDate}</time>
     <slot />
