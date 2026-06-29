@@ -14,8 +14,8 @@ const defaultImage = new URL('/images/hero-professional-final.jpg', siteUrl).toS
 const pageTitle = `${title}`;
 
 // Contact details will be updated with real operator info when available
-const contactPhone = '';
-const contactTel = '';
+const contactPhone = 'Request quote for immediate callback'; // Temporary - real operator phone will replace
+const contactTel = ''; // Use quote form or email for callback
 const contactEmail = 'quotes@springfieldlotstriping.com';
 
 const websiteSchema = {
@@ -42,9 +42,25 @@ const websiteSchema = {
         latitude: 37.2090,
         longitude: -93.2923
       },
-      areaServed: ['Springfield', 'Nixa', 'Ozark', 'Republic', 'Battlefield', 'Rogersville', 'Greene County'],
-      serviceType: ['Parking Lot Striping', 'ADA Compliance Striping', 'Fire Lane Striping', 'Warehouse Line Striping'],
-      priceRange: '$$'
+      areaServed: [
+        { '@type': 'City', name: 'Springfield', addressRegion: 'MO' },
+        { '@type': 'City', name: 'Nixa', addressRegion: 'MO' },
+        { '@type': 'City', name: 'Ozark', addressRegion: 'MO' },
+        { '@type': 'City', name: 'Republic', addressRegion: 'MO' },
+        { '@type': 'City', name: 'Battlefield', addressRegion: 'MO' },
+        { '@type': 'City', name: 'Rogersville', addressRegion: 'MO' },
+        { '@type': 'AdministrativeArea', name: 'Greene County', addressRegion: 'MO' }
+      ],
+      serviceType: ['Parking Lot Striping', 'ADA Compliance Striping', 'Fire Lane Striping', 'Warehouse Line Striping', 'Restriping'],
+      priceRange: '$$',
+      hasOfferCatalog: {
+        '@type': 'OfferCatalog',
+        name: 'Commercial Parking Lot Striping Services',
+        itemListElement: [
+          { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Parking Lot Striping' } },
+          { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'ADA Compliance Striping' } }
+        ]
+      }
     },
     {
       '@type': 'WebSite',
