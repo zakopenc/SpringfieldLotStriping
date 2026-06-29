@@ -14,8 +14,8 @@ const defaultImage = new URL('/images/hero-professional-final.jpg', siteUrl).toS
 const pageTitle = `${title}`;
 
 // Contact details will be updated with real operator info when available
-const contactPhone = 'Request quote for immediate callback'; // Temporary - real operator phone will replace
-const contactTel = ''; // Use quote form or email for callback
+const contactPhone = ''; // Quote via form or email only (no direct phone displayed)
+const contactTel = '';
 const contactEmail = 'quotes@springfieldlotstriping.com';
 
 const websiteSchema = {
@@ -118,6 +118,12 @@ const websiteSchema = {
 </head>
 <body class="bg-surface text-concrete antialiased">
   <slot />
+  
+  <!-- Mobile sticky CTA -->
+  <div class="md:hidden fixed bottom-0 left-0 right-0 z-50 bg-primary-dark border-t border-white/20 p-3">
+    <a href="/contact" class="block w-full text-center btn-primary py-3 text-base font-semibold">Request Free Quote →</a>
+  </div>
+
   <Footer />
 </body>
 </html>
