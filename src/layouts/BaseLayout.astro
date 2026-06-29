@@ -13,7 +13,7 @@ const canonical = new URL(Astro.url.pathname, siteUrl).toString();
 const defaultImage = new URL('/images/hero-professional-final.jpg', siteUrl).toString();
 const pageTitle = `${title}`;
 
-// NAP will be updated with operator details
+// Contact details will be updated with real operator info when available
 const contactPhone = '';
 const contactTel = '';
 const contactEmail = 'quotes@springfieldlotstriping.com';
@@ -28,11 +28,10 @@ const websiteSchema = {
       description: 'Commercial parking lot striping and ADA compliance marking services in Springfield, MO and Greene County.',
       url: siteUrl,
       email: contactEmail,
-      email: contactEmail,
       image: defaultImage,
       address: {
         '@type': 'PostalAddress',
-        streetAddress: '1245 N Glenstone Ave',
+        streetAddress: 'Springfield, MO',
         addressLocality: 'Springfield',
         addressRegion: 'MO',
         postalCode: '65802',
