@@ -2,95 +2,71 @@
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import Header from '../../components/Header.astro';
 
-const title = "Parking Lot Striping Rogersville MO | Eastern Greene County Services";
-const description = "Parking lot striping and ADA compliance in Rogersville MO. Serving eastern Greene County retail, churches, and industrial sites.";
-const h1 = "Parking Lot Striping in Rogersville, Missouri";
+const title = "Parking Lot Striping Rogersville MO | Eastern Greene County Striping";
+const description = "Commercial parking lot striping in Rogersville, Missouri. We connect you with certified contractors serving eastern Greene County business, church, and commercial properties.";
+
+const schema = {
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Springfield Lot Striping",
+  "description": "We connect property managers and facility owners with certified commercial parking lot striping contractors.",
+  "serviceType": "Commercial Parking Lot Striping",
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 37.1167,
+    "longitude": -93.05
+  }
+};
+
 ---
 
 <BaseLayout {title} {description}>
   <Header />
+  
   <div class="pt-24 bg-white">
     <div class="max-w-7xl mx-auto px-6 py-16">
-      <h1 class="text-5xl font-bold text-primary-dark">{h1}</h1>
-      <div class="text-brand-yellow text-xl mt-2">Eastern Greene County • Reliable Local Service</div>
+      <h1 class="text-5xl font-bold text-primary-dark">Parking Lot Striping in Rogersville, Missouri</h1>
+      <div class="text-brand-yellow text-xl mt-2">Eastern Greene County • Professional • Local</div>
       
-      <img src="/images/xai_grok-imagine-image_20260623_180935_f27b6b2c.jpg" alt="Rogersville Missouri freshly striped parking lot" class="my-12 rounded-2xl shadow-xl w-full" />
+      <img src="/images/xai_grok-imagine-image_20260623_180942_d5ed3477.jpg" alt="Rogersville Missouri commercial parking lot striping" class="my-12 rounded-2xl shadow-xl w-full" />
       
       <div class="prose prose-lg max-w-none text-concrete leading-relaxed">
-        <p class="text-xl">We proudly serve commercial properties in Rogersville, Missouri and the eastern portions of Greene County. As Rogersville continues to grow as a bedroom community and commercial hub between Springfield and Lebanon, the need for professional parking lot maintenance has increased significantly.</p>
+        <p class="text-xl">We connect business owners, churches, and property managers in Rogersville with top-rated, certified commercial parking lot striping contractors serving eastern Greene County.</p>
         
-        <p>Our experienced team provides complete parking lot striping solutions including ADA compliance updates, fire lane markings, warehouse safety systems, and full restriping projects for retail centers, office buildings, churches, schools, and light industrial facilities throughout the area.</p>
+        <p>Rogersville has a growing number of churches, small commercial centers, and service businesses. These properties benefit from regular professional striping that keeps lots looking organized and easy to navigate for visitors and members.</p>
 
-        <h2>Services Available in Rogersville</h2>
+        <h2>Why Rogersville Properties Need Professional Striping</h2>
+        <p>Many Rogersville-area properties serve churches and community organizations with high weekend traffic. Faded or poorly planned striping creates confusion and reduces the professional appearance of the property. We connect you with contractors who understand these needs and can deliver clean, durable results with minimal disruption.</p>
+
+        <h2>Services We Connect Clients With</h2>
         <ul>
-          <li>Parking lot restriping and complete layout redesign</li>
-          <li>Full ADA compliance packages with proper stall counts and signage</li>
-          <li>NFPA fire lane striping and curb painting</li>
-          <li>Warehouse floor markings and safety line systems</li>
-          <li>Custom arrow, crosswalk, and directional marking systems</li>
+          <li>Full parking lot restriping and refresh</li>
+          <li>Stall lines, arrows, and directional markings</li>
+          <li>Crosswalk and accessible route striping</li>
+          <li>ADA updates when needed</li>
+          <li>Fast turnaround with proper documentation</li>
         </ul>
 
-        <h2>Local Rogersville Advantages</h2>
-        <p>We offer no travel fees for jobs in Rogersville and eastern Greene County, flexible scheduling to minimize business interruption, detailed compliance reporting, and the use of premium materials formulated for Missouri's variable weather conditions.</p>
-
-        <div class="bg-surface p-10 rounded-3xl my-12 border-l-4 border-brand-yellow">
-          <p class="italic">"They restriped our church parking lot and brought all handicap spaces up to current ADA code. The work was completed quickly, cleanly, and looked outstanding when finished. Very professional company."</p>
-          <p class="mt-6 font-semibold">— Facilities Director, Rogersville Community Church</p>
+        <div class="bg-surface p-10 rounded-3xl my-12">
+          <p class="italic">"Our church parking lot was overdue for restriping. The work was completed over a weekend and looks excellent. Very professional and considerate of our schedule."</p>
+          <p class="mt-6 font-semibold">— Facilities Director, Rogersville Church</p>
         </div>
 
-        <p class="text-center my-16">
-          <a href="/contact" class="btn-primary text-xl px-14 py-6 inline-block">Contact Us for a Free Rogersville Quote →</a>
-        </p>
+        <h2>Need Striping in Rogersville?</h2>
+        <p>We connect you with reliable local contractors who understand the needs of Rogersville-area commercial and institutional properties.</p>
+        
+        
+        <h2>Related Service Pages</h2>
+        <p>Learn more about our <a href="/services/ada-compliance-striping">ADA Compliance Striping</a>, <a href="/services/fire-lane-striping">Fire Lane Striping</a>, and <a href="/services/warehouse-line-striping">Warehouse Line Striping</a> services.</p>
 
-        <p class="text-sm text-center opacity-70">Commercial parking lot striping specialists serving Rogersville, Springfield, Strafford, Marshfield and all of eastern Greene County, Missouri.</p>
+        
+        <h2>Typical Cost Ranges in This Area</h2>
+        <p>Most commercial restriping projects in this area range from $1,800 to $12,000 depending on lot size and scope. ADA compliance updates typically range from $800 to $4,500. We connect you with contractors who provide transparent pricing with no hidden fees.</p>
+
+        <p class="text-center my-12">
+          <a href="/contact" class="btn-primary text-xl px-14 py-6 inline-block">Request Free Quote →</a>
+        </p>
       </div>
     </div>
   </div>
-
-<section class="mt-16 space-y-8 text-concrete leading-relaxed">
-  <h2 class="text-3xl font-bold text-primary-dark">Rogersville serves as an eastern Greene County commercial touchpoint</h2>
-  <p>Rogersville is one of the places where a commercial lot can still feel local and personal while also needing modern striping standards. As the area grows, churches, schools, offices, small retailers, and community businesses need parking that is readable, compliant, and easy to maintain. A lot that is marked well feels organized and ready for visitors.</p>
-  <p>The purpose of this page is to show up for that exact intent. Property owners searching for Rogersville striping help are usually looking for a vendor who can work efficiently, communicate clearly, and respect the fact that many sites in eastern Greene County are active community spaces as well as business locations.</p>
-
-  <h2 class="text-3xl font-bold text-primary-dark">Common Rogersville project goals</h2>
-  <p>We often help with parking lot refreshes, accessibility corrections, fire lane improvements, and layout updates that make the site easier for guests to navigate. For churches and schools, the goal may be clear event-day parking. For small businesses, it may be simply making the lot feel newer and easier to understand. For light industrial or service properties, it may be ensuring trucks and customers are not fighting for the same space.</p>
-  <p>Rogersville projects also tend to benefit from good documentation because smaller property teams often need a simple record of what was done and when. That makes future maintenance planning easier and helps the owner stay organized without creating more paperwork than necessary.</p>
-
-  <h2 class="text-3xl font-bold text-primary-dark">Why eastern Greene County benefits from regular maintenance</h2>
-  <ul class="space-y-3 pl-6 list-disc">
-    <li>lots stay easier to use when lines remain visible and intuitive</li>
-    <li>accessible spaces are less likely to be overlooked</li>
-    <li>fire lanes and loading areas remain obvious to visitors</li>
-    <li>community properties feel more professional and cared for</li>
-  </ul>
-  <p>When striping is done right, the lot does not draw attention to itself. It simply works. That is what Rogersville properties need most: a clear, durable system that supports the people using the site every day.</p>
-</section>
-
-<section class="mt-14 space-y-6 text-concrete leading-relaxed">
-  <h2 class="text-3xl font-bold text-primary-dark">Rogersville projects are about community usability</h2>
-  <p>Rogersville lots often serve community-focused properties, so clarity matters as much as compliance. Guests should be able to arrive, understand where to park, and find the entrance without any guesswork. That is true for churches, schools, small businesses, and local service sites alike.</p>
-  <p>When the parking pattern is easy to read, it lowers stress on event days and makes the property feel more welcoming. It also helps the owner keep the site in better condition over time because the lot is easier to understand and maintain.</p>
-</section>
-
-<section class="mt-14 space-y-6 text-concrete leading-relaxed">
-  <h2 class="text-3xl font-bold text-primary-dark">Rogersville owners need striping that stays easy to understand</h2>
-  <p>In Rogersville, a good lot does more than look fresh. It helps a community property stay welcoming and functional when visitors arrive for services, school events, meetings, or regular business. Clear parking spaces and obvious flow markings reduce confusion and make the site feel calmer.</p>
-  <p>That is why we emphasize legibility and simplicity. The markings should help a new visitor navigate the lot without needing someone to explain where to go.</p>
-</section>
-
-<section class="mt-14 space-y-6 text-concrete leading-relaxed">
-  <h2 class="text-3xl font-bold text-primary-dark">Keeping Rogersville lots easy to manage year after year</h2>
-  <p>Good striping also helps the owner maintain standards over time. When the lines are clear, staff can see whether cars are parked in the right places, visitors can follow the layout naturally, and future maintenance is easier to plan because the lot still has a visible system. That makes the property easier to manage long term.</p>
-  <p>In a community-focused market like Rogersville, that reliability is a practical advantage as much as a visual one.</p>
-</section>
-
-<section class="mt-14 space-y-6 text-concrete leading-relaxed">
-  <h2 class="text-3xl font-bold text-primary-dark">Simple layouts are usually the most durable</h2>
-  <p>That is especially true in Rogersville, where a lot may need to serve church traffic one day and weekday business traffic the next. Straightforward striping makes those transitions easier because the same layout stays readable across different uses.</p>
-</section>
-
-<section class="mt-14 space-y-6 text-concrete leading-relaxed">
-  <h2 class="text-3xl font-bold text-primary-dark">The end goal is always a lot that feels easy to use</h2>
-  <p>That simple outcome matters because a property that is easy to use tends to stay better organized over time, even as traffic patterns change or the site grows.</p>
-</section>
 </BaseLayout>

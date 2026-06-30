@@ -1,0 +1,59 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Header from '../../components/Header.astro';
+
+const title = "ADA Compliance Striping Battlefield MO | Accessible Parking Solutions";
+const description = "ADA-compliant parking lot striping in Battlefield, Missouri. We connect you with certified contractors experienced in accessible stall layout and compliance documentation for south Greene County commercial properties.";
+
+const schema = {
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Springfield Lot Striping",
+  "description": "We connect property managers and facility owners with certified commercial parking lot striping contractors.",
+  "serviceType": "Commercial Parking Lot Striping"
+};
+
+---
+
+<BaseLayout {title} {description}>
+  <Header />
+  
+  <div class="pt-24 bg-white">
+    <div class="max-w-7xl mx-auto px-6 py-16">
+      <h1 class="text-5xl font-bold text-primary-dark">ADA Compliance Striping in Battlefield, Missouri</h1>
+      <div class="text-brand-yellow text-xl mt-2">Accessible • Compliant • Documented</div>
+      
+      <img src="/images/xai_grok-imagine-image_20260623_180927_63d294da.jpg" alt="ADA striping Battlefield Missouri" class="my-12 rounded-2xl shadow-xl w-full" />
+      
+      <div class="prose prose-lg max-w-none text-concrete leading-relaxed">
+        <p class="text-xl">We connect Battlefield property owners and managers with certified contractors who specialize in ADA-compliant parking lot striping for south Greene County commercial and multifamily properties.</p>
+        
+        <p>Battlefield has grown significantly as part of the Springfield metro area. Many properties, including medical offices, retail centers, churches, and apartment communities, require accurate accessible parking that meets current federal standards.</p>
+
+        <h2>ADA Striping Requirements in Battlefield</h2>
+        <p>Correct accessible stall sizing, van-accessible spaces, access aisles, and proper signage are all required. Many older lots in the area were striped before current standards were widely enforced. We match you with contractors who can assess existing conditions and deliver compliant solutions with proper documentation.</p>
+
+        <h2>Services Included</h2>
+        <ul>
+          <li>Accessible stall layout and striping</li>
+          <li>Van-accessible space designation</li>
+          <li>Access aisle placement and marking</li>
+          <li>Full compliance documentation</li>
+          <li>Before-and-after photography</li>
+        </ul>
+
+        <div class="bg-surface p-10 rounded-3xl my-12">
+          <p class="italic">"We needed to update accessible parking at two multifamily properties. The work was completed with clear documentation that satisfied our management company requirements."</p>
+          <p class="mt-6 font-semibold">— Regional Manager, Battlefield Apartments</p>
+        </div>
+
+        <h2>Need ADA Striping in Battlefield?</h2>
+        <p>We connect you with contractors experienced in accessible parking compliance for the south Greene County market.</p>
+        
+        <p class="text-center my-12">
+          <a href="/contact" class="btn-primary text-xl px-14 py-6 inline-block">Request ADA Assessment →</a>
+        </p>
+      </div>
+    </div>
+  </div>
+</BaseLayout>

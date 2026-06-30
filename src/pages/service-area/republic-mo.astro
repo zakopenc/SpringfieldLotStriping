@@ -3,86 +3,75 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 import Header from '../../components/Header.astro';
 
 const title = "Parking Lot Striping Republic MO | Striping Western Greene County";
-const description = "Parking lot striping and compliance work in Republic MO. Serving western Greene County commercial properties with fast local response.";
-const h1 = "Parking Lot Striping in Republic, Missouri";
+const description = "Parking lot striping in Republic MO. We connect you with certified contractors for western Greene County commercial properties along US Highway 60 and the Republic Airport industrial corridor.";
+
+const schema = {
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Republic Lot Striping",
+  "description": "We connect property managers and facility owners in Republic with certified commercial parking lot striping contractors.",
+  "areaServed": { "@type": "City", "name": "Republic" },
+  "serviceType": "Commercial Parking Lot Striping",
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 37.12,
+    "longitude": -93.48
+  }
+};
+
 ---
 
 <BaseLayout {title} {description}>
   <Header />
+  
   <div class="pt-24 bg-white">
     <div class="max-w-7xl mx-auto px-6 py-16">
-      <h1 class="text-5xl font-bold text-primary-dark">{h1}</h1>
+      <h1 class="text-5xl font-bold text-primary-dark">Parking Lot Striping in Republic, Missouri</h1>
       <div class="text-brand-yellow text-xl mt-2">Western Greene County • Professional • Compliant</div>
       
       <img src="/images/xai_grok-imagine-image_20260623_180942_d5ed3477.jpg" alt="Republic Missouri commercial parking lot striping" class="my-12 rounded-2xl shadow-xl w-full" />
       
       <div class="prose prose-lg max-w-none text-concrete leading-relaxed">
-        <p class="text-xl">We are the leading provider of commercial parking lot striping services in Republic, Missouri. Located in western Greene County, Republic has experienced significant commercial growth in recent years, particularly along US Highway 60 and near the Republic Airport industrial corridor. Our team is experienced in serving the specific needs of these growing business areas.</p>
+        <p class="text-xl">We connect property managers and facility owners in Republic, Missouri with top-rated, certified commercial parking lot striping contractors serving western Greene County.</p>
         
-        <p>Whether you manage a large distribution center, retail shopping center, medical office building, or light manufacturing facility, we deliver crisp, durable, and fully code-compliant parking lot markings that improve safety, professionalism, and regulatory compliance.</p>
+        <p>Republic has experienced significant commercial growth along US Highway 60 and near the Republic Airport industrial corridor. This area sees heavy truck traffic from distribution centers and manufacturing facilities, which requires more durable materials and precise layout planning. We connect you with contractors who understand the demands of western Greene County industrial properties. Distribution centers, retail centers, medical offices, and light manufacturing facilities all require clear, durable, and code-compliant parking lot markings.</p>
 
-        <h2>Full Range of Republic Striping Services</h2>
+        <h2>Why Republic Properties Need Professional Striping</h2>
+        <p>Western Greene County properties often deal with heavy truck traffic, industrial use, and frequent repaving. Many lots have outdated layouts or faded striping that no longer meets current needs. We connect you with contractors who understand the local soil conditions, weather exposure, and traffic patterns specific to this area.</p>
+
+        <h2>Services We Connect Clients With</h2>
         <ul>
           <li>Complete parking lot layout design and restriping</li>
-          <li>Full ADA compliance packages with detailed documentation</li>
+          <li>Full ADA compliance packages with documentation</li>
           <li>NFPA-compliant fire lane striping and red curb painting</li>
-          <li>Warehouse floor markings, forklift lanes, and safety zones</li>
-          <li>Custom directional systems, crosswalks, and specialty markings</li>
+          <li>Warehouse floor markings and safety zones</li>
+          <li>Custom directional systems and crosswalks</li>
         </ul>
 
-        <h2>Local Republic Expertise</h2>
-        <p>Our crews understand the unique soil conditions, traffic patterns, and weather exposure common to western Greene County. We use premium traffic paints and thermoplastic materials specifically chosen to withstand Republic's climate and heavy truck traffic near the industrial parks.</p>
-
         <div class="bg-surface p-10 rounded-3xl my-12">
-          <p class="italic">"They handled a complete ADA compliance update for our 200,000 sq ft distribution center. The work was completed over a weekend with zero disruption to operations. Excellent communication and professional results."</p>
+          <p class="italic">"They handled a complete ADA compliance update for our 200,000 sq ft distribution center. The work was completed over a weekend with zero disruption to operations."</p>
           <p class="mt-6 font-semibold">— Operations Manager, Republic Logistics Park</p>
         </div>
 
-        <h2>Serving All of Western Greene County</h2>
-        <p>In addition to Republic proper, we regularly serve nearby areas including Brookline, Willard, and the western portions of Springfield. No job is too large or too small. We provide free on-site assessments and transparent pricing with no hidden fees.</p>
+        <h2>Need Striping in Republic?</h2>
+        <p>We connect you with experienced local contractors who understand the unique demands of western Greene County commercial properties.</p>
+        
+        
+        
+        <h2>Regulatory and Weather Considerations</h2>
+        <p>Springfield and surrounding areas are subject to Missouri state accessibility requirements and local fire codes. Freeze-thaw cycles and heavy seasonal rain can significantly impact striping durability. We connect you with contractors who stay current on local regulations and material performance in this climate.</p>
 
-        <p class="text-center my-16">
-          <a href="/contact" class="btn-primary text-xl px-14 py-6 inline-block">Request Your Free Republic Parking Lot Quote Today →</a>
+        <h2>Related Service Pages</h2>
+        <p>Learn more about our <a href="/services/ada-compliance-striping">ADA Compliance Striping</a>, <a href="/services/fire-lane-striping">Fire Lane Striping</a>, and <a href="/services/warehouse-line-striping">Warehouse Line Striping</a> services.</p>
+
+        
+        <h2>Typical Cost Ranges in This Area</h2>
+        <p>Most commercial restriping projects in this area range from $1,800 to $12,000 depending on lot size and scope. ADA compliance updates typically range from $800 to $4,500. We connect you with contractors who provide transparent pricing with no hidden fees.</p>
+
+        <p class="text-center my-12">
+          <a href="/contact" class="btn-primary text-xl px-14 py-6 inline-block">Request Free Quote →</a>
         </p>
-
-        <p class="text-sm text-center opacity-70">Commercial parking lot striping only. Licensed • Insured • ADA Specialists. Serving Republic and all of Greene County, Missouri.</p>
       </div>
     </div>
   </div>
-
-<section class="mt-16 space-y-8 text-concrete leading-relaxed">
-  <h2 class="text-3xl font-bold text-primary-dark">Republic needs dependable striping as the western Greene County market grows</h2>
-  <p>Republic continues to expand as a practical commercial hub west of Springfield, with growth tied to retail, service businesses, logistics, and industrial activity. That growth creates a simple but important need: parking lots and access lanes have to be easy to read, safe to use, and well maintained. If the striping is weak, the property starts to feel disorganized even when the building itself is in good shape.</p>
-  <p>This page is here to capture that local demand. Republic property managers are usually looking for a vendor that can handle both the technical side of the layout and the practical side of the scheduling. They want a team that understands traffic flow, compliance, and the reality of working around active tenants or customers.</p>
-
-  <h2 class="text-3xl font-bold text-primary-dark">Where Republic projects tend to stand out</h2>
-  <p>Some Republic lots are straightforward restripes. Others need a broader layout correction because the property has changed over time. New tenants, repaving, expanded parking demand, or altered traffic patterns can leave an older layout behind. When that happens, a simple paint refresh is not enough. The project needs a cleaner plan that reflects how the site actually operates today.</p>
-  <p>That is especially true on properties where truck movement, service access, and pedestrian safety all matter at once. Republic’s commercial growth includes sites that need more than just visible lines; they need a system. That can mean better arrows, safer crosswalks, clearer loading zones, and accessible spaces that are easier to find from the curb.</p>
-
-  <h2 class="text-3xl font-bold text-primary-dark">Benefits for local owners and managers</h2>
-  <ul class="space-y-3 pl-6 list-disc">
-    <li>cleaner appearance for tenants and customers</li>
-    <li>improved lot circulation and fewer parking disputes</li>
-    <li>better visibility for accessible spaces and fire lanes</li>
-    <li>documentation that supports property management records</li>
-    <li>less confusion when traffic peaks during busy hours</li>
-  </ul>
-  <p>For Republic businesses, a well-marked lot is one of the simplest ways to show the site is managed carefully. That perception matters because customers usually notice a lot before they notice the building. Good striping helps the property feel ready.</p>
-
-  <h2 class="text-3xl font-bold text-primary-dark">How we stage the work</h2>
-  <p>We review the existing conditions, discuss whether the layout should be maintained or improved, and then plan a sequence that keeps the business usable while the work is underway. For active commercial sites, we often stage the project by zones so access remains available and downtime stays low. The point is not just to paint lines; it is to improve the function of the property with minimal disruption.</p>
-</section>
-
-<section class="mt-14 space-y-6 text-concrete leading-relaxed">
-  <h2 class="text-3xl font-bold text-primary-dark">What western Greene County owners get from a better layout</h2>
-  <p>Republic property owners often want the same thing: a lot that is easy to use and easy to maintain. A stronger layout improves both. It gives customers more confidence, helps staff understand where to park, and makes the property feel more professionally managed.</p>
-  <p>Because many local commercial sites serve mixed use traffic, the striping has to work for people who know the property and people who do not. That is where clear arrows, visible stalls, and well-positioned accessible spaces make a noticeable difference.</p>
-  <p>If the lot currently feels like it only barely works, a restripe or a modest redesign can usually produce a strong improvement without a huge project.</p>
-</section>
-
-<section class="mt-14 space-y-6 text-concrete leading-relaxed">
-  <h2 class="text-3xl font-bold text-primary-dark">Why a clearer lot helps Republic compete</h2>
-  <p>Republic owners often compete on practicality: easy access, good visibility, and spaces that are simple to use. Fresh striping supports all three. It makes the property feel cleaner, helps visitors understand the system faster, and keeps the site from looking worn before the building itself is old.</p>
-  <p>That is a small change with a noticeable market effect, especially for properties that want to keep tenants comfortable and customer traffic moving smoothly.</p>
-</section>
 </BaseLayout>

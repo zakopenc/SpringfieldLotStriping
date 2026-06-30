@@ -1,0 +1,59 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Header from '../../components/Header.astro';
+
+const title = "Restriping Rogersville MO | Commercial Parking Lot Refresh";
+const description = "Parking lot restriping in Rogersville, Missouri. We connect you with certified contractors serving eastern Greene County business, church, and commercial properties with fast, professional restriping services.";
+
+const schema = {
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Springfield Lot Striping",
+  "description": "We connect property managers and facility owners with certified commercial parking lot striping contractors.",
+  "serviceType": "Commercial Parking Lot Striping"
+};
+
+---
+
+<BaseLayout {title} {description}>
+  <Header />
+  
+  <div class="pt-24 bg-white">
+    <div class="max-w-7xl mx-auto px-6 py-16">
+      <h1 class="text-5xl font-bold text-primary-dark">Parking Lot Restriping in Rogersville, Missouri</h1>
+      <div class="text-brand-yellow text-xl mt-2">Refresh • Professional • Local</div>
+      
+      <img src="/images/xai_grok-imagine-image_20260623_180942_d5ed3477.jpg" alt="Parking lot restriping Rogersville Missouri" class="my-12 rounded-2xl shadow-xl w-full" />
+      
+      <div class="prose prose-lg max-w-none text-concrete leading-relaxed">
+        <p class="text-xl">We connect Rogersville business owners, churches, and property managers with certified contractors who specialize in commercial parking lot restriping for eastern Greene County.</p>
+        
+        <p>Rogersville has a growing number of churches, small commercial centers, and service businesses. These properties benefit from regular restriping that keeps lots looking professional and easy to navigate.</p>
+
+        <h2>Why Restriping Matters in Rogersville</h2>
+        <p>Faded striping creates confusion for visitors and makes properties appear less maintained. Regular restriping improves first impressions, reduces parking disputes, and supports a professional image. We match you with contractors who deliver clean, crisp results with minimal disruption.</p>
+
+        <h2>Restriping Services</h2>
+        <ul>
+          <li>Full lot restriping and layout refresh</li>
+          <li>Stall lines, arrows, and stop bars</li>
+          <li>Crosswalk and directional markings</li>
+          <li>ADA updates when needed</li>
+          <li>Fast turnaround with proper documentation</li>
+        </ul>
+
+        <div class="bg-surface p-10 rounded-3xl my-12">
+          <p class="italic">"Our church parking lot was overdue for restriping. The work was completed over a weekend and looks excellent. Very professional and considerate of our schedule."</p>
+          <p class="mt-6 font-semibold">— Facilities Director, Rogersville Church</p>
+        </div>
+
+        <h2>Need Restriping in Rogersville?</h2>
+        <p>We connect you with reliable local contractors who understand the needs of Rogersville-area commercial and institutional properties.</p>
+        
+        <p class="text-center my-12">
+          <a href="/contact" class="btn-primary text-xl px-14 py-6 inline-block">Request Restriping Quote →</a>
+        </p>
+      </div>
+    </div>
+  </div>
+</BaseLayout>

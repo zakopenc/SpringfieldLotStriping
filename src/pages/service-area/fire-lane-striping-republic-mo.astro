@@ -1,0 +1,67 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Header from '../../components/Header.astro';
+
+const title = "Fire Lane Striping Republic MO | NFPA Compliant Fire Access Markings";
+const description = "Fire lane striping and red curb painting in Republic, Missouri. We connect you with certified contractors experienced in NFPA-compliant fire access markings for western Greene County commercial and industrial properties.";
+
+const schema = {
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Springfield Lot Striping",
+  "description": "We connect property managers and facility owners with certified commercial parking lot striping contractors.",
+  "serviceType": "Commercial Parking Lot Striping"
+};
+
+---
+
+<BaseLayout {title} {description}>
+  <Header />
+  
+  <div class="pt-24 bg-white">
+    <div class="max-w-7xl mx-auto px-6 py-16">
+      <h1 class="text-5xl font-bold text-primary-dark">Fire Lane Striping in Republic, Missouri</h1>
+      <div class="text-brand-yellow text-xl mt-2">NFPA Compliant • Clearly Marked • Documented</div>
+      
+      <img src="/images/xai_grok-imagine-image_20260623_180942_d5ed3477.jpg" alt="Fire lane striping Republic Missouri" class="my-12 rounded-2xl shadow-xl w-full" />
+      
+      <div class="prose prose-lg max-w-none text-concrete leading-relaxed">
+        <p class="text-xl">We connect Republic property owners and facility managers with experienced, certified contractors who specialize in fire lane striping and red curb painting that meets NFPA and local fire code requirements.</p>
+        
+        <p>Republic has seen significant commercial and industrial growth along US Highway 60 and near the Republic Airport corridor. Distribution centers, manufacturing facilities, retail centers, and medical buildings all require clearly marked fire lanes that remain visible and compliant year-round.</p>
+
+        <h2>Why Fire Lane Compliance Matters in Republic</h2>
+        <p>Fire lane markings are one of the most commonly cited issues during fire inspections. Faded, missing, or incorrectly placed fire lanes can result in failed inspections, fines, or increased insurance scrutiny. In growing commercial areas like Republic, properties are inspected regularly, making consistent, high-quality fire lane striping essential.</p>
+        
+        <p>Our network of contractors understands the specific requirements for red curb painting, fire lane lettering, and proper placement relative to building access points and hydrants.</p>
+
+        <h2>Fire Lane Striping Services</h2>
+        <ul>
+          <li>NFPA-compliant fire lane layout and striping</li>
+          <li>Red curb painting with proper lettering</li>
+          <li>Fire hydrant clearance markings</li>
+          <li>Emergency vehicle access route identification</li>
+          <li>Full photographic documentation</li>
+          <li>Compliance records for fire department inspections</li>
+        </ul>
+
+        <h2>Common Issues in Western Greene County</h2>
+        <p>Many Republic-area properties have fire lanes that have faded due to heavy truck traffic or were never properly installed to current standards. Some lots have fire lanes that are too narrow or incorrectly positioned relative to building entrances. These issues create both compliance risk and potential safety concerns.</p>
+        
+        <p>We match you with contractors who know how to deliver durable, clearly visible fire lane markings that hold up under local conditions.</p>
+
+        <div class="bg-surface p-10 rounded-3xl my-12">
+          <p class="italic">"The fire marshal flagged our faded fire lanes during a routine inspection. The work was completed quickly with proper red curb painting and full documentation. We passed the re-inspection without issues."</p>
+          <p class="mt-6 font-semibold">— Operations Manager, Republic Industrial Park</p>
+        </div>
+
+        <h2>Need Fire Lane Striping in Republic?</h2>
+        <p>If your property requires updated fire lane markings or you want to ensure compliance ahead of an inspection, we connect you with local contractors who specialize in this work.</p>
+        
+        <p class="text-center my-12">
+          <a href="/contact" class="btn-primary text-xl px-14 py-6 inline-block">Request Fire Lane Assessment →</a>
+        </p>
+      </div>
+    </div>
+  </div>
+</BaseLayout>

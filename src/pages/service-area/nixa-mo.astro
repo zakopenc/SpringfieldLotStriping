@@ -2,89 +2,76 @@
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import Header from '../../components/Header.astro';
 
-const title = "Parking Lot Striping Nixa MO | Commercial Striping Near Springfield";
-const description = "Parking lot striping and ADA compliance in Nixa MO. Fast service for Christian County retail, medical, and warehouse properties near Springfield.";
-const h1 = "Parking Lot Striping in Nixa, Missouri";
+const title = "Parking Lot Striping Nixa MO | Commercial Striping Christian County";
+const description = "Commercial parking lot striping in Nixa, Missouri. We connect you with certified contractors serving Christian County retail, medical, church, and distribution properties with fast, professional striping services.";
+
+const schema = {
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Nixa Lot Striping",
+  "description": "We connect property managers and facility owners in Nixa with certified commercial parking lot striping contractors.",
+  "areaServed": { "@type": "City", "name": "Nixa" },
+  "serviceType": "Commercial Parking Lot Striping",
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 37.0206,
+    "longitude": -93.2944
+  }
+};
+
 ---
 
 <BaseLayout {title} {description}>
   <Header />
+  
   <div class="pt-24 bg-white">
     <div class="max-w-7xl mx-auto px-6 py-16">
-      <h1 class="text-5xl font-bold text-primary-dark">{h1}</h1>
-      <div class="text-brand-yellow text-xl mt-2">Christian County • Fast • Compliant • Professional</div>
+      <h1 class="text-5xl font-bold text-primary-dark">Parking Lot Striping in Nixa, Missouri</h1>
+      <div class="text-brand-yellow text-xl mt-2">Christian County • Growing Market • Professional</div>
       
-      <img src="/images/xai_grok-imagine-image_20260623_180927_63d294da.jpg" alt="Freshly striped commercial parking lot in Nixa MO" class="my-12 rounded-2xl shadow-xl w-full" />
+      <img src="/images/xai_grok-imagine-image_20260623_180942_d5ed3477.jpg" alt="Nixa Missouri commercial parking lot striping" class="my-12 rounded-2xl shadow-xl w-full" />
       
       <div class="prose prose-lg max-w-none text-concrete leading-relaxed">
-        <p class="text-xl">We are the trusted choice for commercial parking lot striping throughout Nixa, Missouri and all of Christian County. As Nixa continues to grow rapidly with new retail developments, medical offices, churches, distribution centers, and multi-family housing, the demand for professional, code-compliant parking lot markings has never been higher.</p>
+        <p class="text-xl">We connect property managers and facility owners throughout Nixa and Christian County with top-rated, certified commercial parking lot striping contractors.</p>
         
-        <p>Our team specializes in high-visibility, long-lasting striping that meets or exceeds both federal ADA standards and local Christian County fire and safety regulations. We understand the unique challenges faced by Nixa property managers — heavy weekend traffic near Highway 14 and 160, strict code enforcement, and the need to minimize disruption to tenants and customers.</p>
+        <p>Nixa continues to grow rapidly with new retail developments, medical offices, churches, distribution centers, and multi-family housing. The Highway 14 and 160 corridors see especially high weekend traffic, which puts extra pressure on striping durability. We connect you with contractors who understand Christian County growth patterns and code enforcement priorities. This growth creates strong demand for professional, code-compliant parking lot markings that keep pace with increasing traffic.</p>
 
-        <h2>Our Commercial Striping Services in Nixa Include</h2>
-        <ul class="grid md:grid-cols-2 gap-3">
-          <li>✓ Standard and custom parking stall layouts</li>
-          <li>✓ ADA compliance markings and signage</li>
-          <li>✓ Fire lane striping with bright red curbs and regulatory lettering</li>
-          <li>✓ Warehouse safety lines, forklift paths, and loading dock markings</li>
-          <li>✓ Directional arrows, crosswalks, stop bars, and handicapped symbols</li>
-          <li>✓ Restriping faded lines and complete parking lot redesigns</li>
+        <h2>Why Nixa Properties Need Professional Striping</h2>
+        <p>Properties in Nixa often face heavy weekend traffic near Highway 14 and 160, strict code enforcement, and the need to minimize disruption to tenants and customers. We connect you with contractors who understand these local conditions and can deliver work with minimal operational impact.</p>
+
+        <h2>Services We Connect Clients With</h2>
+        <ul>
+          <li>Same-week availability for most restriping jobs</li>
+          <li>Full ADA compliance expertise and documentation</li>
+          <li>Early morning and overnight scheduling options</li>
+          <li>Fire lane and safety markings</li>
+          <li>Professional before-and-after documentation</li>
         </ul>
 
-        <h2>Why Nixa Property Managers Choose Us</h2>
-        <p>We offer same-week availability for most restriping jobs, overnight and early-morning scheduling options, detailed before-and-after documentation, and competitive pricing with no hidden travel fees within Christian County. Our work is backed by years of professional experience serving the greater Springfield metro area.</p>
-
-        <h2>Common Nixa Projects We Complete</h2>
-        <p>Recent projects in Nixa have included full ADA compliance updates for large retail centers, fire lane restriping for churches and schools, warehouse safety upgrades for distribution companies near the Ozark foothills, and complete parking lot redesigns for new apartment complexes.</p>
-
-        <h2>ADA Compliance in Nixa</h2>
-        <p>Missouri commercial properties can face fines of up to $75,000 for ADA violations. We ensure your parking lot meets all current accessibility requirements including proper stall count ratios, van-accessible spaces, access aisle dimensions, slope requirements, and signage height. We provide full documentation for your property records and insurance needs.</p>
-
-        <div class="bg-surface p-10 rounded-3xl my-12 border-l-4 border-brand-yellow">
-          <p class="italic text-lg">"They restriped our entire medical office complex in one night. The ADA markings are perfect and the lines still look brand new six months later. Highly recommend for any Nixa commercial property."</p>
-          <p class="mt-4 font-semibold">— Facilities Director, Nixa Medical Plaza</p>
+        <div class="bg-surface p-10 rounded-3xl my-12">
+          <p class="italic">"We needed restriping across multiple retail properties in Nixa. The work was completed with excellent communication and minimal disruption to our tenants."</p>
+          <p class="mt-6 font-semibold">— Property Manager, Nixa Retail Group</p>
         </div>
 
-        <h2>Ready to Improve Your Nixa Parking Lot?</h2>
-        <p>Whether you need a full restriping, ADA compliance upgrade, fire lane markings, or a complete new layout design, we provide fast, professional service with transparent pricing.</p>
+        <h2>Need Striping in Nixa?</h2>
+        <p>We connect you with experienced contractors who understand the growth dynamics and compliance requirements in Christian County.</p>
         
-        <p class="text-center my-12">
-          <a href="/contact" class="btn-primary text-lg px-12 py-5 inline-block">Get Your Free Nixa Parking Lot Quote Today →</a>
-        </p>
+        
+        
+        <h2>Regulatory and Weather Considerations</h2>
+        <p>Springfield and surrounding areas are subject to Missouri state accessibility requirements and local fire codes. Freeze-thaw cycles and heavy seasonal rain can significantly impact striping durability. We connect you with contractors who stay current on local regulations and material performance in this climate.</p>
 
-        <p class="text-sm text-center text-concrete/70">Serving all of Nixa, Christian County, and the greater Springfield area. No residential driveway work.</p>
+        <h2>Related Service Pages</h2>
+        <p>Learn more about our <a href="/services/ada-compliance-striping">ADA Compliance Striping</a>, <a href="/services/fire-lane-striping">Fire Lane Striping</a>, and <a href="/services/warehouse-line-striping">Warehouse Line Striping</a> services.</p>
+
+        
+        <h2>Typical Cost Ranges in This Area</h2>
+        <p>Most commercial restriping projects in this area range from $1,800 to $12,000 depending on lot size and scope. ADA compliance updates typically range from $800 to $4,500. We connect you with contractors who provide transparent pricing with no hidden fees.</p>
+
+        <p class="text-center my-12">
+          <a href="/contact" class="btn-primary text-xl px-14 py-6 inline-block">Request Free Quote →</a>
+        </p>
       </div>
     </div>
   </div>
-
-<section class="mt-16 space-y-8 text-concrete leading-relaxed">
-  <h2 class="text-3xl font-bold text-primary-dark">Why Nixa commercial properties need a dedicated service page</h2>
-  <p>Nixa has grown into one of the most active commercial areas south of Springfield, and that growth shows up in the parking lots. New retail centers, medical offices, churches, apartment communities, and service businesses continue to add traffic to the Highway 14 and 160 corridors. For property managers, that means a parking lot has to be clear, durable, and easy to maintain so the site can keep up with daily demand.</p>
-  <p>We built this page to match that local intent. People searching for Nixa striping work are usually not looking for theory; they are trying to solve a real project on a live site. They want a contractor who can explain the layout, handle ADA concerns, and work around business hours without creating chaos.</p>
-
-  <h2 class="text-3xl font-bold text-primary-dark">The kinds of Nixa properties we help most</h2>
-  <p>In Nixa, we often see commercial lots that need a better balance between customer parking and access for employees, deliveries, and accessibility. Churches and schools need parking that can flex for event days. Medical offices need accessible routes that feel obvious from the curb. Retail centers need directionals and crosswalks that keep people moving safely through busy entrance points.</p>
-  <p>That mix makes planning important. The lot needs to serve the property on a normal weekday and also hold up during weekend traffic spikes, seasonal events, and tenant turnover. A good striping plan gives the owner more control over that traffic and reduces the chance that the lot becomes the bottleneck.</p>
-
-  <h2 class="text-3xl font-bold text-primary-dark">Local issues we solve in Christian County</h2>
-  <ul class="space-y-3 pl-6 list-disc">
-    <li>faded parking stalls from heavy summer sun and repeated traffic</li>
-    <li>confusing entries and exits near the busier commercial corridors</li>
-    <li>accessible spaces that need to be refreshed after repaving or lot changes</li>
-    <li>fire lane markings that need better visibility and cleaner layout</li>
-    <li>parking systems that no longer match how the business actually uses the site</li>
-  </ul>
-  <p>Because Nixa often serves both local residents and Springfield commuters, the striping has to be easy to read at a glance. Visitors should immediately know where to park, where to walk, and where not to stop. If the lot feels intuitive, the business starts with a better first impression.</p>
-
-  <h2 class="text-3xl font-bold text-primary-dark">How we approach a Nixa project</h2>
-  <p>We begin with a site review, identify the traffic pattern, and determine whether the current layout should be repaired or redesigned. Some lots only need a refresh. Others need new stall counts, better ADA placement, or directional changes that better fit the property’s current use. Once the plan is clear, we stage the work so the owner can keep operations moving with as little disruption as possible.</p>
-  <p>For Nixa owners, the value of the project is usually found in the combination of compliance and usability. The lot should look professional, but it should also work better. That is the standard we aim for.</p>
-</section>
-
-<section class="mt-14 space-y-6 text-concrete leading-relaxed">
-  <h2 class="text-3xl font-bold text-primary-dark">Why Nixa properties benefit from proactive maintenance</h2>
-  <p>Nixa is the kind of market where commercial properties grow quickly, and growth changes how a lot gets used. A design that worked a few years ago might now be handling more traffic, more tenant activity, and more weekend demand. Proactive restriping helps the site keep up before the lines become too weak to guide drivers effectively.</p>
-  <p>That is especially useful around busy retail and service corridors where visitors do not know the lot well. Clear parking stalls, arrows, and crosswalks reduce the chance of parking friction and make the property feel easier to navigate. For owners, that often translates into fewer complaints and a better first impression.</p>
-  <p>Even simple maintenance can go a long way here because the city’s growth keeps raising expectations for how commercial spaces should look and function.</p>
-</section>
 </BaseLayout>
