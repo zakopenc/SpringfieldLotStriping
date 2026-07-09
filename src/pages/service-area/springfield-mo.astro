@@ -5,7 +5,6 @@ import Header from '../../components/Header.astro';
 const title = "Parking Lot Striping Springfield MO | Commercial Line Striping Greene County";
 const description = "Commercial parking lot striping in Springfield MO and Greene County. We connect you with certified contractors for ADA, fire lanes, and warehouse markings across East Sunshine, Glenstone, and the James River corridor.";
 
-
 const schema = {
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
@@ -26,11 +25,11 @@ const schema = {
     "longitude": -93.2982
   }
 };
-
 ---
 
 <BaseLayout {title} {description}>
   <Header />
+  <script type="application/ld+json" set:html={JSON.stringify(schema)}></script>
   
   <div class="pt-24 bg-white">
     <div class="max-w-7xl mx-auto px-6 py-16">
@@ -41,12 +40,12 @@ const schema = {
       
       <div class="prose prose-lg max-w-none text-concrete leading-relaxed">
         <p class="text-xl">We connect facility managers, property owners, and commercial operators in Springfield and Greene County with top-rated, certified parking lot striping contractors. Springfield is the largest and most diverse market in our service area, with a wide mix of retail corridors, medical campuses, warehouses, office parks, and multi-tenant properties.</p>
-        
+
         <p>Whether you manage a strip mall on East Sunshine, a medical office near Glenstone, or a distribution center along the James River corridor, we match you with contractors who understand the specific traffic patterns, compliance requirements, and operational needs of Springfield commercial properties.</p>
 
         <h2>Why Springfield Properties Need Specialized Striping</h2>
         <p>Springfield commercial lots face unique challenges. Many properties have been repaved or reconfigured multiple times, leaving old layouts that no longer match current use. High tenant turnover, frequent delivery traffic, and strict ADA enforcement all create ongoing demand for accurate, well-documented striping work.</p>
-        
+
         <p>Springfield has seen consistent commercial growth along East Sunshine, Glenstone, and the James River corridor. This growth brings a mix of older retail centers that need layout corrections and newer medical and distribution facilities that require precise ADA and fire lane compliance from day one. We connect you with contractors who know how to assess real-world conditions on routes like East Sunshine, Campbell, Kansas Expressway, and the James River corridor — and deliver striping that actually fits how each property operates.</p>
 
         <h2>Local Challenges Specific to Springfield</h2>
@@ -64,7 +63,7 @@ const schema = {
 
         <h2>How Local Context Improves Results</h2>
         <p>A lot off East Sunshine behaves differently than a warehouse near the James River. Some properties need tight customer parking, while others require wide truck lanes and clear pedestrian separation. We connect you with contractors who tailor the striping plan to the actual traffic patterns and business operations on each site.</p>
-        
+
         <p>This local approach reduces complaints, improves traffic flow, supports ADA compliance, and helps the property feel more professionally managed.</p>
 
         <div class="bg-surface p-10 rounded-3xl my-12">
@@ -74,9 +73,7 @@ const schema = {
 
         <h2>Ready to Improve Your Springfield Parking Lot?</h2>
         <p>If you need professional striping, ADA updates, or a full lot refresh, we connect you with experienced local contractors who understand the Springfield market.</p>
-        
-        
-        
+
         <h2>Regulatory and Weather Considerations</h2>
         <p>Springfield and surrounding areas are subject to Missouri state accessibility requirements and local fire codes. Freeze-thaw cycles and heavy seasonal rain can significantly impact striping durability. We connect you with contractors who stay current on local regulations and material performance in this climate.</p>
 
