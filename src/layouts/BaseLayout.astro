@@ -13,10 +13,10 @@ const canonical = new URL(Astro.url.pathname, siteUrl).toString();
 const defaultImage = new URL('/images/hero-professional-final.jpg', siteUrl).toString();
 const pageTitle = `${title}`;
 
-// Contact details will be updated with real operator info when available
-const contactPhone = ''; // Quote via form or email only (no direct phone displayed)
-const contactTel = '';
+const contactPhone = '(417) 231-0198';
+const contactTel = '+14172310198';
 const contactEmail = 'quotes@springfieldlotstriping.com';
+const contactStreet = 'Springfield, MO';
 
 const websiteSchema = {
   '@context': 'https://schema.org',
@@ -27,16 +27,9 @@ const websiteSchema = {
       name: 'Springfield Lot Striping',
       description: 'Commercial parking lot striping and ADA compliance marking services in Springfield, MO and Greene County.',
       url: siteUrl,
+      telephone: contactTel,
       email: contactEmail,
       image: defaultImage,
-      address: {
-        '@type': 'PostalAddress',
-        streetAddress: 'Springfield, MO',
-        addressLocality: 'Springfield',
-        addressRegion: 'MO',
-        postalCode: '65802',
-        addressCountry: 'US'
-      },
       geo: {
         '@type': 'GeoCoordinates',
         latitude: 37.2090,
@@ -52,6 +45,13 @@ const websiteSchema = {
         { '@type': 'AdministrativeArea', name: 'Greene County', addressRegion: 'MO' }
       ],
       serviceType: ['Parking Lot Striping', 'ADA Compliance Striping', 'Fire Lane Striping', 'Warehouse Line Striping', 'Restriping'],
+      address: {
+        '@type': 'PostalAddress',
+        streetAddress: contactStreet,
+        addressLocality: 'Springfield',
+        addressRegion: 'MO',
+        addressCountry: 'US'
+      },
       priceRange: '$$',
       hasOfferCatalog: {
         '@type': 'OfferCatalog',
@@ -116,7 +116,7 @@ const websiteSchema = {
 
   <script type="application/ld+json" set:html={JSON.stringify(websiteSchema)}></script>
 </head>
-<body class="bg-surface text-concrete antialiased">
+<body class="bg-surface text-concrete antialiased pb-24 md:pb-0">
   <slot />
   
   <!-- Mobile sticky CTA -->

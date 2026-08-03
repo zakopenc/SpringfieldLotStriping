@@ -2,7 +2,7 @@
 ---
 
 <header class="fixed top-0 left-0 right-0 z-50 border-b border-white/10 bg-primary-dark/95 backdrop-blur-sm">
-  <div class="max-w-7xl mx-auto px-4 sm:px-6 py-4 flex items-center justify-between gap-4">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 py-3 sm:py-4 flex flex-wrap items-center justify-between gap-3 sm:gap-4">
     <a href="/" class="flex items-center gap-3 min-w-0">
       <img src="/images/logo-final-v2.png" alt="Springfield Lot Striping" class="h-20 sm:h-22 w-auto shrink-0" />
       <div class="min-w-0">
@@ -11,12 +11,21 @@
       </div>
     </a>
 
-    <div class="flex items-center gap-3 sm:gap-6 shrink-0">
-      <a href="/contact" class="hidden md:inline text-white hover:text-brand-yellow text-sm font-medium transition-colors">Request Quote</a>
-
-      <a href="/contact" class="btn-primary text-xs sm:text-sm px-5 sm:px-8 py-3 sm:py-4 whitespace-nowrap shadow-sm">
-        Get Free Quote →
-      </a>
+    <div class="flex flex-col items-end gap-2 shrink-0 ml-auto">
+      <div class="hidden md:flex items-center gap-4 text-xs text-white/70">
+        <span>Springfield, MO</span>
+        <span class="text-white/40">|</span>
+        <a href="tel:+14172310198" class="hover:text-brand-yellow transition-colors">(417) 231-0198</a>
+      </div>
+      <div class="hidden md:block text-[10px] text-white/45 text-right mt-1">
+        Temporary operator contact for quote requests
+      </div>
+      <div class="flex items-center gap-3 sm:gap-6 shrink-0">
+        <a href="/contact" class="hidden md:inline text-white hover:text-brand-yellow text-sm font-medium transition-colors">Request Quote</a>
+        <a href="/contact" class="btn-primary text-xs sm:text-sm px-5 sm:px-8 py-3 sm:py-4 whitespace-nowrap shadow-sm">
+          Get Free Quote →
+        </a>
+      </div>
     </div>
   </div>
 </header>
