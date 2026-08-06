@@ -1,7 +1,7 @@
 ---
 const phone = '(417) 231-0198';
 const email = 'quotes@springfieldlotstriping.com';
-const street = 'Springfield, MO';
+const city = 'Springfield, MO';
 const tempNote = 'Temporary operator contact for quote requests.';
 ---
 
@@ -9,11 +9,11 @@ const tempNote = 'Temporary operator contact for quote requests.';
   <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-3 gap-10">
     <div>
       <div class="flex items-center gap-3 mb-4">
-        <img src="/images/logo-final-v2.png" alt="Springfield Lot Striping" class="h-16 w-auto" />
+        <img src="/images/logo-final-v2.png" alt="Springfield Lot Striping" width="128" height="64" class="h-16 w-auto" />
         <span class="text-white font-semibold text-xl">Springfield Lot Striping</span>
       </div>
       <p class="text-sm text-white/70">Commercial parking lot striping and ADA compliance for Springfield and Greene County businesses.</p>
-      <p class="text-xs text-white/60 mt-2">{street} &amp; Greene County</p>
+      <p class="text-xs text-white/60 mt-2">Serving {city} and Greene County</p>
       <p class="text-[10px] text-white/45 mt-2">{tempNote}</p>
     </div>
 
@@ -24,9 +24,7 @@ const tempNote = 'Temporary operator contact for quote requests.';
         <a href={`tel:${phone.replace(/\D/g, '')}`} class="block hover:text-brand-yellow transition-colors font-medium">{phone}</a>
         <a href={`mailto:${email}`} class="block hover:text-brand-yellow transition-colors font-medium">{email}</a>
       </div>
-      <div class="mt-4 text-sm text-white/70">
-        Prompt quote turnaround Greene County focus
-      </div>
+      <div class="mt-4 text-sm text-white/70">Prompt quote turnaround with a Greene County focus.</div>
     </div>
 
     <div>
@@ -35,7 +33,6 @@ const tempNote = 'Temporary operator contact for quote requests.';
         <li><a href="/services/parking-lot-striping" class="hover:text-brand-yellow transition-colors">Parking Lot Striping</a></li>
         <li><a href="/services/ada-compliance-striping" class="hover:text-brand-yellow transition-colors">ADA Compliance Striping</a></li>
         <li><a href="/services/fire-lane-striping" class="hover:text-brand-yellow transition-colors">Fire Lane Striping</a></li>
-        <li><a href="/about" class="hover:text-brand-yellow transition-colors">About</a></li>
         <li><a href="/faq" class="hover:text-brand-yellow transition-colors">FAQ</a></li>
         <li><a href="/contact" class="hover:text-brand-yellow transition-colors">Request a Quote</a></li>
       </ul>

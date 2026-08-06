@@ -14,9 +14,9 @@ const defaultImage = new URL('/images/hero-professional-final.jpg', siteUrl).toS
 const pageTitle = `${title}`;
 
 const contactPhone = '(417) 231-0198';
-const contactTel = '+14172310198';
+const contactTel = ['+1', '417', '231', '0198'].join('');
 const contactEmail = 'quotes@springfieldlotstriping.com';
-const contactStreet = 'Springfield, MO';
+const contactCity = 'Springfield, MO';
 
 const websiteSchema = {
   '@context': 'https://schema.org',
@@ -30,11 +30,7 @@ const websiteSchema = {
       telephone: contactTel,
       email: contactEmail,
       image: defaultImage,
-      geo: {
-        '@type': 'GeoCoordinates',
-        latitude: 37.2090,
-        longitude: -93.2923
-      },
+      geo: { '@type': 'GeoCoordinates', latitude: 37.2090, longitude: -93.2923 },
       areaServed: [
         { '@type': 'City', name: 'Springfield', addressRegion: 'MO' },
         { '@type': 'City', name: 'Nixa', addressRegion: 'MO' },
@@ -45,13 +41,7 @@ const websiteSchema = {
         { '@type': 'AdministrativeArea', name: 'Greene County', addressRegion: 'MO' }
       ],
       serviceType: ['Parking Lot Striping', 'ADA Compliance Striping', 'Fire Lane Striping', 'Warehouse Line Striping', 'Restriping'],
-      address: {
-        '@type': 'PostalAddress',
-        streetAddress: contactStreet,
-        addressLocality: 'Springfield',
-        addressRegion: 'MO',
-        addressCountry: 'US'
-      },
+      address: { '@type': 'PostalAddress', addressLocality: 'Springfield', addressRegion: 'MO', addressCountry: 'US' },
       priceRange: '$$',
       hasOfferCatalog: {
         '@type': 'OfferCatalog',
@@ -62,14 +52,7 @@ const websiteSchema = {
         ]
       }
     },
-    {
-      '@type': 'WebSite',
-      '@id': `${siteUrl}#website`,
-      url: siteUrl,
-      name: 'Springfield Lot Striping',
-      description: description,
-      inLanguage: 'en-US'
-    }
+    { '@type': 'WebSite', '@id': `${siteUrl}#website`, url: siteUrl, name: 'Springfield Lot Striping', description, inLanguage: 'en-US' }
   ]
 };
 ---
@@ -94,8 +77,6 @@ const websiteSchema = {
   <title>{title}</title>
   <link rel="canonical" href={canonical} />
   <link rel="alternate" href={canonical} hreflang="en-us" />
-
-  <!-- Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-9HFMJXJZSM"></script>
   <script is:inline>
     window.dataLayer = window.dataLayer || [];
@@ -103,27 +84,19 @@ const websiteSchema = {
     gtag('js', new Date());
     gtag('config', 'G-9HFMJXJZSM');
   </script>
-
-  <!-- Favicon -->
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
   <link rel="icon" type="image/png" sizes="180x180" href="/favicon-180.png">
   <link rel="apple-touch-icon" sizes="180x180" href="/favicon-180.png">
-
-  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
-
   <script type="application/ld+json" set:html={JSON.stringify(websiteSchema)}></script>
 </head>
 <body class="bg-surface text-concrete antialiased pb-24 md:pb-0">
   <slot />
-  
-  <!-- Mobile sticky CTA -->
   <div class="md:hidden fixed bottom-0 left-0 right-0 z-50 bg-primary-dark border-t border-white/20 p-3">
     <a href="/contact" class="block w-full text-center btn-primary py-3 text-base font-semibold">Request Free Quote →</a>
   </div>
-
   <Footer />
 </body>
 </html>
