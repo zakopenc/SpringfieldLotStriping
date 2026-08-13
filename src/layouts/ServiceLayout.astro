@@ -54,6 +54,33 @@ const breadcrumbSchema = {
       <div class="stripe-divider w-20 h-1 bg-brand-yellow mb-12"></div>
 
       <slot />
+
+      <section class="mt-14 grid gap-8 lg:grid-cols-3 not-prose">
+        <div class="rounded-2xl border border-slate-200 bg-slate-50 p-6">
+          <h2 class="text-2xl font-semibold text-primary-dark mb-3">Built for Springfield-area commercial properties</h2>
+          <p class="text-concrete leading-relaxed">Springfield, Nixa, Ozark, Republic, Battlefield, and Rogersville properties deal with heavy summer sun, freeze-thaw cycles, rain, and tracking from busy entrances. A useful striping plan accounts for traffic flow, drainage, loading activity, and the way customers and delivery drivers actually move through the site.</p>
+        </div>
+        <div class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+          <h2 class="text-2xl font-semibold text-primary-dark mb-3">A documented quote process</h2>
+          <ol class="space-y-3 text-concrete leading-relaxed list-decimal list-inside">
+            <li>Share the property address, approximate lot size, and the markings that need attention.</li>
+            <li>Review traffic flow, ADA spaces, fire lanes, loading zones, and problem areas.</li>
+            <li>Receive a written scope with scheduling options designed to limit disruption.</li>
+            <li>Keep project photos and measurements with your property maintenance records.</li>
+          </ol>
+        </div>
+        <div class="rounded-2xl border border-brand-yellow/40 bg-brand-yellow/10 p-6">
+          <h2 class="text-2xl font-semibold text-primary-dark mb-3">Explore related services</h2>
+          <p class="text-concrete leading-relaxed mb-4">Many properties need more than one marking category during the same maintenance cycle.</p>
+          <div class="flex flex-wrap gap-2 text-sm font-semibold">
+            <a class="underline hover:text-primary-dark" href="/services/parking-lot-striping/">Parking lots</a>
+            <a class="underline hover:text-primary-dark" href="/services/ada-compliance-striping/">ADA markings</a>
+            <a class="underline hover:text-primary-dark" href="/services/fire-lane-striping/">Fire lanes</a>
+            <a class="underline hover:text-primary-dark" href="/services/warehouse-line-striping/">Warehouse lines</a>
+            <a class="underline hover:text-primary-dark" href="/services/restriping/">Restriping</a>
+          </div>
+        </div>
+      </section>
     </div>
   </div>
 
