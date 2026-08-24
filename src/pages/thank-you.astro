@@ -1,0 +1,22 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/Header.astro';
+
+const title = 'Quote Request Received | Springfield Lot Striping';
+const description = 'Your quote request was received by Springfield Lot Striping. Review the next steps for commercial parking lot striping in Springfield, Missouri.';
+---
+
+<BaseLayout {title} {description}>
+  <Header />
+  <main class="min-h-[70vh] bg-white pt-52 sm:pt-40 md:pt-36 pb-20">
+    <div class="max-w-2xl mx-auto px-6 text-center">
+      <p class="text-sm font-semibold uppercase tracking-[0.18em] text-brand-yellow">Request received</p>
+      <h1 class="mt-4 text-4xl md:text-5xl font-bold text-primary-dark">Thanks for contacting Springfield Lot Striping.</h1>
+      <p class="mt-6 text-lg leading-relaxed text-concrete">Your project details are on their way to the quote team. If your request is time-sensitive, call <a class="font-semibold text-primary-dark underline decoration-brand-yellow underline-offset-4" href="tel:+14172310198">(417) 231-0198</a>.</p>
+      <div class="mt-10 flex flex-col sm:flex-row justify-center gap-4">
+        <a class="btn-primary justify-center" href="/">Return to homepage →</a>
+        <a class="btn-secondary text-center" href="/services/parking-lot-striping/">Review striping services</a>
+      </div>
+    </div>
+  </main>
+</BaseLayout>
