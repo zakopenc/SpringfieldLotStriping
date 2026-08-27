@@ -55,6 +55,17 @@ h1, h2, h3 {
   transform: translateY(-1px);
 }
 
+.btn-primary:focus-visible,
+.btn-secondary:focus-visible,
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+  outline: 3px solid #f5c400;
+  outline-offset: 3px;
+}
+
 .btn-secondary {
   border: 2px solid #f5c400;
   color: #f5c400;
