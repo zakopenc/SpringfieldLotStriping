@@ -80,6 +80,15 @@ textarea:focus-visible {
   color: #1a1a1a;
 }
 
+/* Accessible yellow link treatment on light backgrounds. */
+.text-on-light-yellow {
+  color: #765f00;
+}
+
+.text-on-light-yellow:hover {
+  color: #4d3d00;
+}
+
 /* Dark asphalt hero gradient */
 .asphalt-hero {
   background: radial-gradient(circle at 30% 20%, #2a2a2a 0%, #1a1a1a 70%);
