@@ -12,6 +12,7 @@ const siteUrl = Astro.site?.toString() ?? 'https://www.springfieldlotstriping.co
 const canonical = new URL(Astro.url.pathname, siteUrl).toString();
 const defaultImage = new URL('/images/hero-professional-final.jpg', siteUrl).toString();
 const pageTitle = `${title}`;
+const showMobileCta = !['/contact/', '/thank-you/'].includes(Astro.url.pathname);
 
 const contactPhone = '(417) 231-0198';
 const contactTel = ['+1', '417', '231', '0198'].join('');
@@ -94,9 +95,9 @@ const websiteSchema = {
 </head>
 <body class="bg-surface text-concrete antialiased pb-24 md:pb-0">
   <slot />
-  <div class="md:hidden fixed bottom-0 left-0 right-0 z-50 bg-primary-dark border-t border-white/20 p-3">
+  {showMobileCta && <div class="md:hidden fixed bottom-0 left-0 right-0 z-50 bg-primary-dark border-t border-white/20 p-3">
     <a href="/contact" class="block w-full text-center btn-primary py-3 text-base font-semibold">Request Free Quote →</a>
-  </div>
+  </div>}
   <Footer />
 </body>
 </html>
